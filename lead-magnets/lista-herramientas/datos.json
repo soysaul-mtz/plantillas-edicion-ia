@@ -1,0 +1,93 @@
+{
+ "titulo": "70 herramientas de IA gratis",
+ "subtitulo": "La lista completa para crear contenido, clonarte, editar, vender y automatizar tu negocio",
+ "autor": "Saúl Martínez",
+ "handle": "@tu_usuario",
+ "fecha": "Octubre 2026",
+ "categorias": [
+  {"id": "ideas", "titulo": "Ideas de contenido", "intro": "Para no volver a quedarte en blanco: investiga tu nicho, encuentra lo que la gente busca y conviértelo en guiones.", "items": [
+   ["ChatGPT", "chatgpt", "Plan gratis", "Lluvia de ideas, guiones y ganchos en segundos.", "chatgpt.com"],
+   ["Claude", "claude", "Plan gratis", "Guiones largos con tu tono y análisis de tus mejores videos.", "claude.ai"],
+   ["Gemini", "gemini", "Plan gratis", "Ideas conectadas a Google y YouTube en tiempo real.", "gemini.google.com"],
+   ["Perplexity", "perplexity", "Plan gratis", "Investiga cualquier tema con fuentes citadas.", "perplexity.ai"],
+   ["NotebookLM", "notebooklm", "Gratis", "Sube videos o PDFs, hazle preguntas y genera un podcast.", "notebooklm.google.com"],
+   ["Ahrefs AI", "ahrefs", "Herramientas gratis", "Palabras clave y temas con demanda real.", "ahrefs.com/free-seo-tools"],
+   ["HubSpot", "hubspot", "Herramientas gratis", "Generador de ideas para blog y redes.", "hubspot.com"],
+   ["AnswerThePublic", "answerthepublic", "Búsquedas gratis al día", "Las preguntas exactas que hace tu audiencia.", "answerthepublic.com"],
+   ["Google Trends", "googletrends", "Gratis", "Qué tema está subiendo y en qué país.", "trends.google.com"],
+   ["TikTok Creative Center", "tiktok", "Gratis", "Hashtags, canciones y anuncios que están pegando.", "ads.tiktok.com/business/creativecenter"]
+  ]},
+  {"id": "clon", "titulo": "Clónate con IA", "intro": "Tu avatar y tu voz trabajando por ti: graba una vez y genera videos sin volver a ponerte frente a la cámara.", "items": [
+   ["HeyGen", "heygen", "Plan gratis", "Tu avatar hablando cualquier guion, en varios idiomas.", "heygen.com"],
+   ["Captions AI", "captions", "Prueba gratis", "Avatares, subtítulos y edición desde el celular.", "captions.ai"],
+   ["Higgsfield", "higgsfield", "Créditos gratis", "Video e imagen cinematográfica con tu cara.", "higgsfield.ai"],
+   ["Hedra", "hedra", "Plan gratis", "Da vida a una foto: habla y gesticula con tu audio.", "hedra.com"],
+   ["D-ID", "did", "Prueba gratis", "Avatares parlantes a partir de una foto.", "d-id.com"],
+   ["AKOOL", "akool", "Créditos gratis", "Avatares, cambio de cara y traducción de video.", "akool.com"],
+   ["Vidnoz AI", "vidnoz", "Plan gratis", "Videos con avatar listos en minutos.", "vidnoz.com"],
+   ["JoggAI", "jogg", "Plan gratis", "Videos de producto con avatar para anuncios.", "jogg.ai"],
+   ["LivePortrait", "liveportrait", "Open source", "Anima retratos con tus gestos (se instala local).", "github.com/KwaiVGI/LivePortrait"],
+   ["SadTalker", "sadtalker", "Open source", "Foto + audio = cabeza que habla (local y gratis).", "github.com/OpenTalker/SadTalker"]
+  ]},
+  {"id": "edicion", "titulo": "Edición con IA", "intro": "Corta, subtitula y saca clips virales sin pasar horas en la línea de tiempo.", "items": [
+   ["CapCut", "capcut", "Gratis", "Edición completa con subtítulos automáticos.", "capcut.com"],
+   ["Descript", "descript", "Plan gratis", "Edita el video editando el texto, quita muletillas.", "descript.com"],
+   ["Captions", "captions", "Prueba gratis", "Subtítulos animados y contacto visual con IA.", "captions.ai"],
+   ["OpusClip", "opusclip", "Plan gratis", "De un video largo saca clips cortos con potencial viral.", "opus.pro"],
+   ["VEED", "veed", "Plan gratis", "Editor en el navegador con subtítulos y limpieza de audio.", "veed.io"],
+   ["Canva Video", "canva", "Gratis", "Plantillas de reels y edición sencilla.", "canva.com"],
+   ["Adobe Express", "adobeexpress", "Plan gratis", "Videos rápidos con plantillas de Adobe.", "adobe.com/express"],
+   ["Wisecut", "wisecut", "Plan gratis", "Corta silencios y agrega música sola.", "wisecut.ai"],
+   ["Klap", "klap", "Prueba gratis", "Convierte videos de YouTube en shorts.", "klap.app"],
+   ["Submagic", "submagic", "Prueba gratis", "Subtítulos con emojis y zooms automáticos.", "submagic.co"]
+  ]},
+  {"id": "carruseles", "titulo": "Carruseles con IA", "intro": "Diseña carruseles, presentaciones e infografías que se guardan y se comparten.", "items": [
+   ["Canva", "canva", "Gratis", "Carruseles con Magic Design y miles de plantillas.", "canva.com"],
+   ["Gamma", "gamma", "Plan gratis", "Presentaciones y carruseles a partir de un texto.", "gamma.app"],
+   ["aiCarousels", "aicarousels", "Gratis", "Carruseles para LinkedIn e Instagram en minutos.", "aicarousels.com"],
+   ["Predis.ai", "predis", "Plan gratis", "Carruseles y posts con copy incluido.", "predis.ai"],
+   ["Adobe Express", "adobeexpress", "Plan gratis", "Diseños de marca con IA generativa.", "adobe.com/express"],
+   ["Simplified", "simplified", "Plan gratis", "Diseño, copy y calendario en un solo lugar.", "simplified.com"],
+   ["Piktochart AI", "piktochart", "Plan gratis", "Infografías a partir de una idea.", "piktochart.com"],
+   ["Visme", "visme", "Plan gratis", "Gráficos, presentaciones y datos visuales.", "visme.co"],
+   ["Venngage AI", "venngage", "Plan gratis", "Infografías y diagramas con IA.", "venngage.com"],
+   ["Slidesgo AI", "slidesgo", "Gratis", "Presentaciones con plantillas listas.", "slidesgo.com"]
+  ]},
+  {"id": "ads", "titulo": "Corre tus anuncios", "intro": "Antes de contratar un trafficker: crea, prueba y lanza tus anuncios tú mismo.", "items": [
+   ["Meta Ads Manager", "meta", "Gratis (pagas la pauta)", "Anuncios en Instagram y Facebook.", "facebook.com/adsmanager"],
+   ["Google Ads", "googleads", "Gratis (pagas la pauta)", "Aparece en Google y YouTube cuando te buscan.", "ads.google.com"],
+   ["TikTok Ads", "tiktok", "Gratis (pagas la pauta)", "Anuncios en TikTok con herramientas creativas.", "ads.tiktok.com"],
+   ["Microsoft Ads", "microsoftads", "Gratis (pagas la pauta)", "Anuncios en Bing, Outlook y LinkedIn.", "ads.microsoft.com"],
+   ["Canva Magic Studio", "canva", "Gratis", "Creativos para anuncios en todos los tamaños.", "canva.com/magic"],
+   ["Predis AI", "predis", "Plan gratis", "Creativos de anuncios con copy y variaciones.", "predis.ai"],
+   ["HubSpot", "hubspot", "Herramientas gratis", "Conecta tus anuncios con tus contactos (CRM).", "hubspot.com"],
+   ["AdCreative.AI", "adcreative", "Prueba gratis", "Cientos de creativos con puntaje de conversión.", "adcreative.ai"],
+   ["Creatopy", "creatopy", "Prueba gratis", "Banners y anuncios animados en serie.", "creatopy.com"],
+   ["Pencil", "pencil", "Prueba gratis", "Genera y predice qué anuncio va a funcionar.", "trypencil.com"]
+  ]},
+  {"id": "web", "titulo": "Páginas web con IA", "intro": "Tu página, tu landing o tu app en minutos, sin programar.", "items": [
+   ["Wix AI", "wix", "Plan gratis", "Describe tu negocio y te arma la página.", "wix.com"],
+   ["Framer AI", "framer", "Plan gratis", "Páginas con diseño de agencia desde un prompt.", "framer.com"],
+   ["Lovable", "lovable", "Plan gratis", "Apps y páginas completas chateando.", "lovable.dev"],
+   ["Bolt.new", "bolt", "Plan gratis", "Crea y publica apps web desde el navegador.", "bolt.new"],
+   ["Replit Agent", "replit", "Plan gratis", "Un agente que programa y publica tu app.", "replit.com"],
+   ["v0 by Vercel", "v0", "Plan gratis", "Interfaces y landings listas para publicar.", "v0.dev"],
+   ["Gamma Sites", "gamma", "Plan gratis", "Una página bonita a partir de un texto.", "gamma.app"],
+   ["Canva Websites", "canva", "Gratis", "Convierte un diseño de Canva en página web.", "canva.com"],
+   ["HubSpot AI", "hubspot", "Gratis", "Página + formularios conectados a tu CRM.", "hubspot.com"],
+   ["Jimdo Dolphin", "jimdo", "Plan gratis", "Página lista respondiendo unas preguntas.", "jimdo.com"]
+  ]},
+  {"id": "agentes", "titulo": "Agentes de IA", "intro": "Empleados digitales que hacen tareas por ti: responder, investigar, agendar y dar seguimiento.", "items": [
+   ["OpenClaw", "openclaw", "Open source", "Asistente personal que trabaja en tus apps y chats.", "openclaw.ai"],
+   ["n8n", "n8n", "Open source", "Automatizaciones y agentes conectando cientos de apps.", "n8n.io"],
+   ["Dify", "dify", "Open source", "Construye agentes y chatbots sin programar.", "dify.ai"],
+   ["Flowise", "flowise", "Open source", "Agentes arrastrando bloques.", "flowiseai.com"],
+   ["Langflow", "langflow", "Open source", "Flujos de IA visuales y reutilizables.", "langflow.org"],
+   ["Relevance AI", "relevance", "Plan gratis", "Un equipo de agentes para ventas y soporte.", "relevanceai.com"],
+   ["Gumloop", "gumloop", "Plan gratis", "Automatiza tareas repetitivas con IA.", "gumloop.com"],
+   ["Lindy", "lindy", "Plan gratis", "Asistente que contesta correos y agenda por ti.", "lindy.ai"],
+   ["CrewAI", "crewai", "Open source", "Equipos de agentes que colaboran entre sí.", "crewai.com"],
+   ["Microsoft AutoGen", "autogen", "Open source", "Framework de Microsoft para sistemas multiagente.", "github.com/microsoft/autogen"]
+  ]}
+ ]
+}

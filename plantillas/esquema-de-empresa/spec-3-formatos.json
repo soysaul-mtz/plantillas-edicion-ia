@@ -1,0 +1,93 @@
+{
+ "origen_x": 29000,
+ "titulo1": "3 Formatos para Empezar",
+ "titulo2": "Editados con",
+ "barra": "Yapping     |     Greenscreen que explica     |     Audio reactivo",
+ "dueno": {
+  "barra": "Dueño: Tú",
+  "texto": "Eliges uno de los tres, lo usas 2 semanas seguidas y apruebas o corriges cada edición."
+ },
+ "jefe": {
+  "barra": "Claude · Jefe de edición",
+  "quien": "cl",
+  "texto": "Edita cada video con el formato elegido: subtítulos, cortes, zooms y los visuales que cada formato necesita."
+ },
+ "laterales": [
+  {
+   "titulo": "Antes de grabar",
+   "quien": "tu",
+   "texto": "Los tres piden lo mismo: un gancho fuerte en los primeros 2 segundos y una sola idea por video."
+  },
+  {
+   "titulo": "Ver cómo se ve el audio reactivo",
+   "quien": "tu",
+   "texto": "Tutorial corto en YouTube con el efecto en acción: https://www.youtube.com/shorts/b_6kMmbdQH0"
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Yapping",
+   "descripcion": "Hablas al celular de una sola idea. Lo que cuenta es el gancho, la idea y el cierre, no la producción.",
+   "agentes": [
+    {
+     "nombre": "Gancho y una idea",
+     "quien": "tu",
+     "texto": "Hablas desde el segundo 0 y pones en pantalla una frase completa. Si tienes dos ideas, haz dos videos."
+    },
+    {
+     "nombre": "Prueba y cierre",
+     "quien": "tu",
+     "texto": "Muestras algo verificable (un número, un antes y después) y cierras con un solo llamado, como comentar una palabra."
+    },
+    {
+     "nombre": "Claude edita",
+     "quien": "cl",
+     "texto": "Quita silencios, quema los subtítulos, pone el gancho en pantalla y deja el video entre 30 y 60 segundos."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Greenscreen que explica",
+   "descripcion": "Tú en un tercio de la pantalla y, al lado, las imágenes o capturas de lo que explicas.",
+   "agentes": [
+    {
+     "nombre": "Eliges el material",
+     "quien": "tu",
+     "texto": "Reúnes las capturas, fotos o noticias de las que vas a hablar. Sirve para comentar contenido de otros."
+    },
+    {
+     "nombre": "Grabas la voz",
+     "quien": "tu",
+     "texto": "Grabas explicando con voz clara y sin pausas largas; el video se arma alrededor de lo que dices."
+    },
+    {
+     "nombre": "Claude arma el panel",
+     "quien": "cl",
+     "texto": "Te coloca en un tercio de la pantalla y cambia las imágenes del otro lado cada 4 a 6 segundos sobre tu voz."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Audio reactivo",
+   "descripcion": "Visuales que laten con el sonido, en loops de 8 a 30 segundos y sin historia. Va mejor con un audio propio.",
+   "agentes": [
+    {
+     "nombre": "Eliges el audio",
+     "quien": "tu",
+     "texto": "Pones un sonido propio o una música con picos claros: ahí es donde reaccionan los visuales."
+    },
+    {
+     "nombre": "Claude lo dibuja",
+     "quien": "cl",
+     "texto": "Con código crea ondas, espectros o formas que pulsan con el audio y exporta el loop en vertical."
+    },
+    {
+     "nombre": "Versión con IA",
+     "quien": "tu",
+     "texto": "Las imágenes que se transforman con IA piden una herramienta de pago. Claude no la usa a menos que tú lo pidas."
+    }
+   ]
+  }
+ ],
+ "cierre": "Elige uno, úsalo 2 semanas seguidas y mide antes de pasar al siguiente formato."
+}

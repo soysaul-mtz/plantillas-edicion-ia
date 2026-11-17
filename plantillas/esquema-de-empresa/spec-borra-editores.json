@@ -1,0 +1,104 @@
+{
+ "origen_x": 43000,
+ "titulo1": "Borra CapCut, Borra Premiere, Borra Edits",
+ "titulo2": "Tu nuevo editor es",
+ "barra": "1 video     |     1 plantilla     |     Escaleta antes de editar",
+ "dueno": {
+  "barra": "Dueño: Tú",
+  "texto": "Compartes el video, eliges el estilo y apruebas cada edición."
+ },
+ "jefe": {
+  "barra": "Claude · Tu editor",
+  "quien": "cl",
+  "texto": "Corta, subtitula, anima y te muestra el plan antes de editar. Lo que le pidas en el prompt, lo hace."
+ },
+ "laterales": [
+  {
+   "titulo": "El prompt exacto",
+   "quien": "tu",
+   "texto": "El mismo prompt que usas con Claude para editar. Lo recibes al comentar la palabra del reel."
+  },
+  {
+   "titulo": "Tu catálogo de plantillas",
+   "quien": "cl",
+   "texto": "Cada estilo guardado con nombre. Pides “edítalo con tal plantilla” y no explicas nada más."
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Comparte contenido",
+   "descripcion": "Le pasas un video recién grabado o el link de un reel con el estilo que quieres.",
+   "agentes": [
+    {
+     "nombre": "Tu video o un reel",
+     "quien": "tu",
+     "texto": "Subes tu video sin editar. Si quieres un estilo nuevo, pegas el link del reel que te gusta."
+    },
+    {
+     "nombre": "Claude lo prepara",
+     "quien": "cl",
+     "texto": "Descarga el reel, lo analiza fotograma por fotograma y guarda el estilo como plantilla con nombre."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Tú pides, él edita",
+   "descripcion": "Eliges una plantilla y escribes en el chat qué quieres. Sin abrir ningún editor.",
+   "agentes": [
+    {
+     "nombre": "Plantilla y prompt",
+     "quien": "tu",
+     "texto": "Pones tu video, eliges la plantilla de tu catálogo y pegas el prompt de edición."
+    },
+    {
+     "nombre": "Escaleta primero",
+     "quien": "cl",
+     "texto": "Te enseña el plan paso a paso y espera tu visto bueno antes de editar."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Antes y después",
+   "descripcion": "El mismo video crudo contra el editado. Esa comparación es la prueba.",
+   "agentes": [
+    {
+     "nombre": "Claude edita",
+     "quien": "cl",
+     "texto": "Corta silencios, pone subtítulos, títulos con hook, animaciones, efectos de sonido y transiciones."
+    },
+    {
+     "nombre": "Revisa y entrega",
+     "quien": "cl",
+     "texto": "Revisa que ningún texto tape la cara y que no queden palabras cortadas antes de mostrarte el resultado."
+    },
+    {
+     "nombre": "Tú comparas",
+     "quien": "tu",
+     "texto": "Ves el antes y el después. Si algo no te gusta, lo corriges en el chat."
+    }
+   ]
+  },
+  {
+   "nombre": "4 · Crea más contenido",
+   "descripcion": "De un video largo que ya funcionó salen varios clips verticales.",
+   "agentes": [
+    {
+     "nombre": "Un video largo",
+     "quien": "tu",
+     "texto": "Le das una entrevista, un directo o un video de YouTube que ya te funcione."
+    },
+    {
+     "nombre": "Claude saca clips",
+     "quien": "cl",
+     "texto": "Elige los mejores momentos, uno por tema, les pone hook y los reencuadra a vertical 9:16."
+    },
+    {
+     "nombre": "Apruebas y publicas",
+     "quien": "tu",
+     "texto": "Revisas los clips editados y publicas los que te gusten."
+    }
+   ]
+  }
+ ],
+ "cierre": "Comenta la palabra “Claude” y te envío el prompt exacto para editar tus videos."
+}

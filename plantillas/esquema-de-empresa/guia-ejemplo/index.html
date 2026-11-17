@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude edita todos tus videos</title>
+<style>
+@font-face{font-family:"SG";src:url(fonts/space-grotesk.woff2) format("woff2");font-weight:300 700}
+@font-face{font-family:"IN";src:url(fonts/inter.woff2) format("woff2");font-weight:100 900}
+@font-face{font-family:"IS";src:url(fonts/instrument-serif.woff2) format("woff2");font-weight:400}
+:root{
+  --lav:#DDE1F9; --lav-bd:#9AA5D6; --navy:#1E2150; --ink:#1a1a1a; --body:#595959;
+  --terra:#D97757; --pale:#F9DDD5; --g1:#f7f7f7; --g2:#ececec; --line:#d9d9d9;
+  --ok:#adf0c7; --ok-t:#067429; --mid:#fff6b6; --mid-t:#af7e04; --no:#ffc6c6; --no-t:#bd0a0a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"IN",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+
+.banner{background:var(--lav);border-bottom:2px solid var(--lav-bd);padding:72px 0 96px;text-align:center}
+.banner h1{font:700 clamp(40px,7vw,92px)/1.02 "SG";letter-spacing:-.03em;color:var(--navy)}
+.banner h2{font:500 clamp(28px,4.6vw,62px)/1.1 "SG";letter-spacing:-.02em;color:var(--navy);margin-top:6px;display:flex;justify-content:center;align-items:center;gap:.22em;flex-wrap:wrap}
+.banner h2 .claude{font:400 1.18em/1 "IS";letter-spacing:-.01em}
+.ast{width:.95em;height:.95em;flex:none}
+.stats{margin:-34px auto 0;max-width:1020px;background:var(--ink);color:#fff;border-radius:14px;padding:22px 28px;display:flex;justify-content:center;gap:14px 38px;flex-wrap:wrap;font:600 18px "SG"}
+.stats span{display:flex;align-items:center;gap:10px}
+.stats span+span::before{content:"";width:1px;height:20px;background:#555;margin-right:28px}
+
+nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--g2);margin-top:36px}
+nav .wrap{display:flex;gap:10px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+nav a{font:600 15px "SG";text-decoration:none;color:var(--body);background:var(--g2);padding:9px 18px;border-radius:999px}
+nav a:hover{background:var(--ink);color:#fff}
+
+section{padding:76px 0 8px}
+.bar{display:inline-block;background:var(--ink);color:#fff;font:700 clamp(24px,3vw,38px) "SG";padding:12px 30px;border-radius:6px;letter-spacing:-.01em}
+.lead{font-size:19px;color:var(--body);max-width:780px;margin-top:20px}
+
+.flow{margin-top:44px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+.flow::before{content:"";position:absolute;left:10%;right:10%;top:-22px;border-top:2px dashed #313131}
+.step{position:relative}
+.step::before{content:"";position:absolute;left:50%;top:-22px;height:22px;border-left:2px dashed #313131}
+.step .bar{display:block;text-align:center;font-size:19px;padding:12px 8px}
+.card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:20px 20px 22px;margin-top:14px;height:calc(100% - 62px)}
+.num{width:34px;height:34px;border-radius:50%;background:var(--body);color:#fff;display:grid;place-items:center;font:700 16px "SG";margin-bottom:12px}
+.card h3{font:700 19px "SG";margin-bottom:6px}
+.card p{font-size:15px;color:var(--body)}
+.chip{display:inline-block;font:700 12px "SG";letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:999px;background:var(--g2);color:var(--body);white-space:nowrap}
+.chip.ok{background:var(--ok);color:var(--ok-t)} .chip.mid{background:var(--mid);color:var(--mid-t)} .chip.no{background:var(--no);color:var(--no-t)} .chip.terra{background:var(--terra);color:#fff} .chip.pale{background:var(--pale);color:var(--ink)}
+.loop{margin-top:32px;background:var(--pale);border-radius:24px;padding:22px 30px;font:700 clamp(18px,2.2vw,26px) "SG";text-align:center}
+
+.inputs{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.inputs .card{height:auto;margin-top:0;padding:24px}
+.inputs .card.main{border-color:var(--terra);background:var(--pale)}
+.inputs .chip{margin-bottom:14px}
+.inputs h3{font-size:22px;margin-bottom:8px}
+.inputs em{display:block;margin-top:12px;font-style:normal;font-size:14px;color:var(--ink);background:#fff;border:1px dashed var(--body);border-radius:8px;padding:8px 12px}
+.arrow{margin:30px 0 0;text-align:center;font:700 22px "SG"}
+
+.panel{margin-top:28px;border:2px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.panel-h{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;background:var(--g1);border-bottom:2px solid var(--line);flex-wrap:wrap}
+.panel-h b{font:700 17px "SG"}
+.btns{display:flex;gap:10px}
+button{font:700 15px "SG";border:0;border-radius:999px;padding:10px 22px;cursor:pointer;background:var(--ink);color:#fff}
+button.alt{background:var(--g2);color:var(--ink)}
+button:hover{opacity:.85}
+button.done{background:var(--ok-t)}
+pre{font:400 14.5px/1.65 "IN",ui-monospace,monospace;white-space:pre-wrap;word-wrap:break-word;padding:26px 28px;color:#2b2b2b;max-height:700px;overflow:auto}
+pre.open{max-height:none}
+
+.out{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.out .card{height:auto;margin-top:0}
+.out .num{background:var(--terra)}
+.callout{margin-top:30px;background:var(--lav);border:2px solid var(--lav-bd);border-radius:16px;padding:22px 28px;font-size:17px}
+.callout b{font-family:"SG"}
+.tbl{margin-top:30px;border:2px solid var(--line);border-radius:18px;overflow:hidden}
+.row{display:grid;grid-template-columns:.8fr 2.6fr 170px;gap:20px;padding:16px 24px;align-items:center;border-top:1px solid var(--g2)}
+.row:first-child{border-top:0}
+.row.head{background:var(--ink);color:#fff;font:700 14px "SG";letter-spacing:.06em;text-transform:uppercase}
+.row b{font:700 16px "SG"}
+.row span{font-size:15px;color:var(--body)}
+.row.head span{color:#fff}
+#herramienta .panel{margin-bottom:26px}
+#p2{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:13px;line-height:1.55;background:#fafafa}
+@media (max-width:980px){.row{grid-template-columns:1fr}}
+footer{margin:80px 0 60px;text-align:center;color:var(--body);font-size:14px}
+
+@media (max-width:980px){
+  .flow,.inputs,.out{grid-template-columns:1fr 1fr}.flow::before,.step::before{display:none}
+  .stats span+span::before{display:none}
+}
+@media (max-width:620px){.flow,.inputs,.out{grid-template-columns:1fr}}
+@page{size:1280px 1810px;margin:0}
+@media print{
+  nav,.btns{display:none}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html,body{width:1280px}
+  .flow{grid-template-columns:repeat(5,1fr)}
+  .flow::before,.step::before{display:block}
+  .inputs,.out{grid-template-columns:repeat(3,1fr)}
+  .stats span+span::before{display:block}
+  .row{grid-template-columns:.8fr 2.6fr 170px}
+  .banner{padding:64px 0 90px}
+  section{padding-top:56px}
+  #herramienta,#prompt,#recibes{break-before:page;padding-top:64px}
+  pre{max-height:none!important;overflow:visible;font-size:14px;line-height:1.6}
+  #p2{font-size:12.5px}
+  .card,.step,.panel-h{break-inside:avoid}
+  .panel{break-inside:auto}
+  footer{margin:50px 0 40px}
+}
+</style>
+</head>
+<body>
+<header class="banner">
+  <div class="wrap">
+    <h1>Edita todos tus Videos</h1>
+    <h2>Automáticamente con
+      <svg class="ast" viewBox="-50 -50 100 100" stroke="#D97757" stroke-width="7" stroke-linecap="round">
+        <line x1="-44" y1="0" x2="44" y2="0"/><line x1="-38" y1="-22" x2="38" y2="22"/><line x1="-22" y1="-38" x2="22" y2="38"/>
+        <line x1="0" y1="-44" x2="0" y2="44"/><line x1="22" y1="-38" x2="-22" y2="38"/><line x1="38" y1="-22" x2="-38" y2="22"/>
+      </svg>
+      <span class="claude">Claude</span>
+    </h2>
+  </div>
+</header>
+<div class="wrap">
+  <div class="stats">
+    <span>1 estilo que te gusta</span>
+    <span>1 prompt</span>
+    <span>Todos tus videos editados igual</span>
+  </div>
+</div>
+
+<nav><div class="wrap">
+  <a href="#como">Cómo funciona</a><a href="#datos">Lo que necesitas</a><a href="#herramienta">Descargar videos</a><a href="#prompt">El prompt</a><a href="#recibes">Lo que recibes</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="como">
+  <span class="bar">Cómo funciona</span>
+  <p class="lead">Le enseñas a Claude un estilo de edición una sola vez. Él lo convierte en una plantilla y, cada vez que le mandas un video, lo edita igual. Tú solo apruebas o corriges.</p>
+  <div class="flow" style="grid-template-columns:repeat(4,1fr)">
+    <div class="step"><span class="bar">Estilo</span><div class="card"><div class="num">1</div><h3>Eliges tu estilo</h3><p>Entras a Instagram y buscas un video con el estilo de edición que te gusta y va con tu marca. Copias su link.</p></div></div>
+    <div class="step"><span class="bar">Plantilla</span><div class="card"><div class="num">2</div><h3>Claude lo vuelve plantilla</h3><p>Le pegas el link con el prompt. Claude desglosa el video y guarda el estilo como plantilla.</p></div></div>
+    <div class="step"><span class="bar">Edición</span><div class="card"><div class="num">3</div><h3>Edita tus videos igual</h3><p>Cada vez que le mandas un video, Claude se basa en la plantilla para editar el tuyo de la misma manera.</p></div></div>
+    <div class="step"><span class="bar">Más estilos</span><div class="card"><div class="num">4</div><h3>Agregas todos los que quieras</h3><p>No te quedas con un solo estilo. Solo hay que pedírselo de la manera correcta.</p></div></div>
+  </div>
+  <div class="loop">Comenta la palabra “Claude” y te envío el prompt exacto para tener muchas plantillas.</div>
+</section>
+
+<section id="datos">
+  <span class="bar">Lo que necesitas</span>
+  <p class="lead">Dos cosas tuyas y una herramienta que pueda trabajar en tu computadora.</p>
+  <div class="inputs">
+    <div class="card main"><span class="chip terra">Obligatorio</span><h3>El link de un reel</h3><p>Un video de Instagram con el estilo de edición que te gusta.</p><em>Ej. instagram.com/reel/…</em></div>
+    <div class="card main"><span class="chip terra">Obligatorio</span><h3>Tus videos</h3><p>Los que grabaste y quieres editar, uno por uno.</p><em>Ej. entrada/mi-video.mp4</em></div>
+    <div class="card"><span class="chip">Opcional</span><h3>Tu marca</h3><p>Colores, tipografías y logo. Si no los pones, Claude te los pregunta.</p></div>
+  </div>
+  <div class="callout" style="margin-top:28px"><b>Importante:</b> para editar archivos de video, Claude tiene que poder usar tu computadora (por ejemplo con Claude Code) y tener ffmpeg, yt-dlp y Whisper instalados. El prompt le pide revisarlo al empezar, instalar lo que falte (con tu permiso) y descargar los videos con un link de Instagram. En un chat normal solo podrá entregarte la plantilla escrita.</div>
+  <p class="arrow">↓ pegas el prompt, le mandas el link y lo envías ↓</p>
+</section>
+
+<section id="herramienta">
+  <span class="bar">Descargar videos de Instagram</span>
+  <p class="lead">Con esta herramienta Claude baja cualquier reel o post público a partir de su link, tanto el estilo que te gusta como tus propios videos. El prompt le pide instalar todo lo necesario, pidiéndote permiso antes.</p>
+  <div class="tbl">
+    <div class="row head"><span>Sistema</span><span>Qué instalar</span><span>Herramienta</span></div>
+    <div class="row"><b>Mac</b><span>Con Homebrew: brew install ffmpeg yt-dlp python</span><span><i class="chip ok">Automático</i></span></div>
+    <div class="row"><b>Windows</b><span>winget install Gyan.FFmpeg · yt-dlp.yt-dlp · Python.Python.3.12</span><span><i class="chip ok">Automático</i></span></div>
+    <div class="row"><b>Linux</b><span>sudo apt install ffmpeg python3 python3-venv pipx, y pipx install yt-dlp</span><span><i class="chip ok">Automático</i></span></div>
+    <div class="row"><b>Whisper</b><span>mlx-whisper en Mac con chip Apple; openai-whisper en los demás. El modelo se baja la primera vez.</span><span><i class="chip mid">Tarda la 1ª vez</i></span></div>
+  </div>
+  <div class="panel">
+    <div class="panel-h"><b>descargar.py · guárdalo como editor/descargar.py</b>
+      <div class="btns"><button data-copy="p2">Copiar código</button></div></div>
+<pre id="p2" class="open">#!/usr/bin/env python3
+"""Descarga un video de Instagram (reel o post público) a una carpeta.
+
+Uso:  python3 descargar.py &lt;link&gt; [carpeta]     (por defecto la carpeta es entrada/)
+"""
+import pathlib
+import shutil
+import subprocess
+import sys
+
+
+def main():
+    if len(sys.argv) &lt; 2:
+        sys.exit("Uso: python3 descargar.py &lt;link&gt; [carpeta]")
+    link = sys.argv[1].split("?")[0]  # quita los parámetros de seguimiento
+    carpeta = pathlib.Path(sys.argv[2] if len(sys.argv) &gt; 2 else "entrada")
+    carpeta.mkdir(parents=True, exist_ok=True)
+    if not shutil.which("yt-dlp"):
+        sys.exit("Falta yt-dlp. Instálalo y vuelve a intentar (Mac: brew install yt-dlp).")
+    cmd = [
+        "yt-dlp", "--no-playlist",
+        "-f", "bv*[vcodec^=avc1]+ba/b",       # prefiere H.264: lo leen todos los programas
+        "--merge-output-format", "mp4",
+        "-o", str(carpeta / "%(id)s.%(ext)s"),
+        "--print", "after_move:filepath",
+        link,
+    ]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        sys.exit("No se pudo descargar:\n" + r.stderr.strip()[-600:])
+    print(r.stdout.strip().splitlines()[-1])  # ruta del video descargado
+
+
+main()</pre>
+  </div>
+  <div class="callout"><b>Si no se puede descargar:</b> cuenta privada, historia que ya caducó o Instagram bloqueando la descarga. Claude te lo dice y te pide el archivo o una grabación de pantalla. Nunca usa tu contraseña ni tus cookies sin pedírtelo.</div>
+</section>
+
+<section id="prompt">
+  <span class="bar">El prompt</span>
+  <p class="lead">Se pega una sola vez al inicio. Después, para crear una plantilla le mandas un link; para editar, le mandas un video.</p>
+  <div class="panel">
+    <div class="panel-h"><b>Prompt completo · Claude edita tus videos</b>
+      <div class="btns"><button class="alt" data-open="p1">Ver completo</button><button data-copy="p1">Copiar prompt</button></div></div>
+<pre id="p1">Eres mi editor de video automático. Trabajas en español de México, tuteando, directo y sin relleno. Tu trabajo: aprender estilos de edición de videos de Instagram que me gustan, guardarlos como plantillas y usarlos para editar mis videos igual, cada vez que te mande uno.
+
+# 0. Preparar mi computadora (solo la primera vez)
+1. Detecta mi sistema operativo y revisa qué tengo instalado: ffmpeg -version, yt-dlp --version y python3 --version (en Windows, python --version). Dime qué falta.
+2. Antes de instalar nada, muéstrame la lista y los comandos exactos, y pídeme permiso. Herramientas que necesito:
+- ffmpeg: cortar, unir y exportar video.
+- yt-dlp: descargar videos desde un link de Instagram.
+- Python 3: para correr los scripts del editor.
+- Whisper: pasar el audio a texto, en mi computadora.
+Comandos de referencia (adáptalos a mi sistema):
+- Mac con Homebrew: brew install ffmpeg yt-dlp python
+- Windows: winget install Gyan.FFmpeg, winget install yt-dlp.yt-dlp y winget install Python.Python.3.12
+- Linux (Debian o Ubuntu): sudo apt install ffmpeg python3 python3-venv pipx, y después pipx install yt-dlp
+- Whisper: crea un entorno virtual en editor/.venv e instala ahí mlx-whisper si mi Mac tiene chip Apple, o openai-whisper en cualquier otro caso. El modelo se descarga la primera vez que lo uses; avísame, porque tarda.
+- Si estoy en Mac y no tengo Homebrew, dime cómo instalarlo desde brew.sh; no lo ejecutes sin mi permiso.
+3. Al terminar, comprueba que todo funciona (versiones y una descarga de prueba con un link mío) y dime "Listo" o qué falló.
+4. Crea la carpeta "editor/" con: plantillas/ (una subcarpeta por estilo), entrada/ (mis videos), salida/ (mis videos editados) y descargar.py (el código está más abajo, en HERRAMIENTA).
+5. Pregúntame mi nombre o marca, mis colores y tipografías (si tengo) y si mis videos son verticales 9:16 (por defecto, sí).
+Si no puedes ejecutar comandos en esta conversación, dímelo desde el principio: sin eso no puedes editar archivos de video y solo podrás entregarme la plantilla escrita.
+
+# MODO 1 · Crear una plantilla (cuando te pase un link de Instagram)
+1. Baja el video con descargar.py: python3 editor/descargar.py "&lt;link&gt;" editor/plantillas/_referencias. Si falla (cuenta privada, restringida o yt-dlp desactualizado), prueba primero yt-dlp -U; si sigue fallando, pídeme el archivo o una grabación de pantalla. No uses mis cookies ni mi contraseña de Instagram sin pedírmelo.
+2. Analízalo cuadro por cuadro (extrae fotogramas, mide los cortes y transcribe) y descríbelo con números:
+- Formato: proporción, FPS y duración total.
+- Ritmo de cortes: cada cuántos segundos hay un corte y de qué tipo (seco, zoom, barrido, flash).
+- Subtítulos: tipografía, tamaño, color, palabra activa resaltada o no, posición, cuántas palabras a la vez, sombra o contorno, mayúsculas o minúsculas.
+- Zooms y movimiento de cámara: cuándo, cuánto (%) y qué tan suave.
+- Transiciones: tipo y duración.
+- Gráficos y overlays: textos, íconos, stickers, barras, logos y en qué momento aparecen.
+- Color y look: contraste, saturación, filtros.
+- Audio: música (volumen respecto a la voz), efectos de sonido y limpieza de silencios.
+- Hook: qué pasa en los primeros 3 segundos.
+3. Destila eso en una plantilla. No recrees el video: quédate con el estilo. Guárdala en plantillas/&lt;nombre&gt;/ con: ESTILO.md (descripción corta en lenguaje humano), plantilla.json (todos los parámetros medidos) y 3 fotogramas de ejemplo.
+4. Dime qué partes del estilo sí puedes replicar con tus herramientas y cuáles no (por ejemplo animaciones complejas o efectos de una app específica) y qué usarías en su lugar. No prometas lo que no puedes hacer.
+5. Pregúntame cómo se llama la plantilla y espera mi OK.
+
+# MODO 2 · Editar un video (cuando te pase un video mío)
+1. Si te paso un link de Instagram de mi propio video, descárgalo con descargar.py a editor/entrada/. Si no te dije con qué plantilla, muéstrame la lista y pregúntame cuál, o propón la más parecida y espera mi OK.
+2. Transcribe mi video por bloques, detecta silencios y tomas repetidas (si hay retomas, deja la mejor) y enséñame qué vas a quitar antes de cortar.
+3. Aplica la plantilla: cortes, subtítulos, zooms, transiciones, música y overlays, como están en plantilla.json. Reglas que siempre se cumplen:
+- Subtítulos legibles y todos del mismo tamaño.
+- Nada de gráficos encima de mi cara.
+- Transición visible en cada corte para que no se note el brinco.
+- Audio parejo, alrededor de -14 LUFS.
+- Si mi video ya trae zooms, que no se note un segundo zoom encima.
+4. Revisa tu propio resultado antes de enseñármelo: extrae fotogramas en cada corte y en cada momento con texto, y comprueba que los subtítulos no se cortan ni tapan la cara y que no hay brincos. Corrige lo que falle y dime qué corregiste.
+5. Guarda el video en salida/ como &lt;video&gt;__&lt;plantilla&gt;.mp4 y dime la ruta.
+6. Pregúntame: ✅ Aprobar · 📝 Notas (qué cambiar) · ❌ No me gustó (rehazlo con otro enfoque). Si te pido cambios, hazlos sin rehacer todo y conserva la versión anterior.
+
+# MODO 3 · Más estilos y ajustes
+- "Agrega esta plantilla": repite el Modo 1 con otro link. Nunca sobrescribas una plantilla existente sin avisarme.
+- "Lista mis plantillas": muestra nombre, resumen en una línea y un fotograma de cada una.
+- "Ajusta la plantilla X": cambia solo lo que te pida (por ejemplo, subtítulos más grandes) y guárdalo como una versión nueva.
+- Si te pido combinar dos plantillas, dime de cuál tomas qué.
+
+# REGLAS SIEMPRE
+- Nunca borres ni sobrescribas mis videos originales: trabaja siempre sobre copias.
+- Los videos de referencia son una guía de estilo: aprende el estilo, no copies su contenido, su voz, sus textos ni su música. Para la música propón pistas libres de derechos o pídeme la mía.
+- Si algo no se puede hacer o no lo puedes ver, dilo en vez de suponer.
+- Todo en español de México.
+- Al terminar cada tarea, resume en 3 líneas qué hiciste y qué sigue.
+- Empieza ahora con el punto 0.
+
+# HERRAMIENTA · descargar.py (guárdalo como editor/descargar.py)
+Sirve para descargar cualquier reel o post público de Instagram a partir de su link. Uso: python3 editor/descargar.py "&lt;link&gt;" [carpeta]. Imprime la ruta del video descargado. Si el video es privado o Instagram lo bloquea, te lo dirá y tendrás que pedirme el archivo.
+
+#!/usr/bin/env python3
+"""Descarga un video de Instagram (reel o post público) a una carpeta.
+
+Uso:  python3 descargar.py &lt;link&gt; [carpeta]     (por defecto la carpeta es entrada/)
+"""
+import pathlib
+import shutil
+import subprocess
+import sys
+
+
+def main():
+    if len(sys.argv) &lt; 2:
+        sys.exit("Uso: python3 descargar.py &lt;link&gt; [carpeta]")
+    link = sys.argv[1].split("?")[0]  # quita los parámetros de seguimiento
+    carpeta = pathlib.Path(sys.argv[2] if len(sys.argv) &gt; 2 else "entrada")
+    carpeta.mkdir(parents=True, exist_ok=True)
+    if not shutil.which("yt-dlp"):
+        sys.exit("Falta yt-dlp. Instálalo y vuelve a intentar (Mac: brew install yt-dlp).")
+    cmd = [
+        "yt-dlp", "--no-playlist",
+        "-f", "bv*[vcodec^=avc1]+ba/b",       # prefiere H.264: lo leen todos los programas
+        "--merge-output-format", "mp4",
+        "-o", str(carpeta / "%(id)s.%(ext)s"),
+        "--print", "after_move:filepath",
+        link,
+    ]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        sys.exit("No se pudo descargar:\n" + r.stderr.strip()[-600:])
+    print(r.stdout.strip().splitlines()[-1])  # ruta del video descargado
+
+
+main()
+</pre>
+  </div>
+</section>
+
+<section id="recibes">
+  <span class="bar">Lo que recibes</span>
+  <p class="lead">Por cada estilo y por cada video, esto es lo que te deja Claude:</p>
+  <div class="out">
+    <div class="card"><div class="num">1</div><h3>Tu plantilla con nombre</h3><p>Una descripción del estilo y todos sus parámetros medidos, más 3 fotogramas de ejemplo.</p></div>
+    <div class="card"><div class="num">2</div><h3>Lo que sí y lo que no</h3><p>Qué partes del estilo puede replicar y cuáles no, sin prometer de más.</p></div>
+    <div class="card"><div class="num">3</div><h3>Tu video editado</h3><p>Con cortes, subtítulos, zooms, transiciones y música, guardado en la carpeta de salida.</p></div>
+    <div class="card"><div class="num">4</div><h3>Autorrevisión</h3><p>Revisa su propio video fotograma por fotograma antes de enseñártelo.</p></div>
+    <div class="card"><div class="num">5</div><h3>Tus originales intactos</h3><p>Nunca toca tus videos grabados: trabaja siempre sobre copias.</p></div>
+    <div class="card"><div class="num">6</div><h3>Un catálogo de estilos</h3><p>Todas tus plantillas guardadas, con versiones nuevas cuando las ajustas.</p></div>
+  </div>
+  <div class="callout"><b>Tu parte:</b> elegir el estilo que te gusta, mandarle tus videos y, por cada edición, aprobar, dejar una nota o pedir que la rehaga.</div>
+</section>
+
+</main>
+<footer>Claude edita todos tus videos · hecho con el estilo de los tableros de Miro</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy), t=el.innerText, old=b.textContent;
+    function ok(){b.textContent='¡Copiado!';b.classList.add('done');setTimeout(function(){b.textContent=old;b.classList.remove('done')},1800)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else{fb()}
+    function fb(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');ok()}catch(e){}s.removeAllRanges()}
+  });
+});
+document.querySelectorAll('[data-open]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.open), open=el.classList.toggle('open');
+    b.textContent=open?'Ver menos':'Ver completo';
+  });
+});
+</script>
+</body>
+</html>

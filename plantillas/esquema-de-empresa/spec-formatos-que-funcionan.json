@@ -1,0 +1,114 @@
+{
+ "origen_x": 29000,
+ "titulo1": "Formatos que Funcionan",
+ "titulo2": "Editados con",
+ "barra": "12 formatos     |     4 familias     |     Elige uno y úsalo 2 semanas",
+ "dueno": {
+  "barra": "Dueño: Tú",
+  "texto": "Eliges el formato que va con tu marca y lo usas al menos 2 semanas seguidas antes de juzgar si funciona."
+ },
+ "jefe": {
+  "barra": "Claude · Jefe de edición",
+  "quien": "cl",
+  "texto": "Analiza el formato que elijas, lo vuelve plantilla y edita cada video nuevo con ese mismo estilo."
+ },
+ "laterales": [
+  {
+   "titulo": "Antes de grabar",
+   "quien": "tu",
+   "texto": "Casi todos los formatos piden lo mismo: un gancho en los primeros 2 segundos, una sola idea y subtítulos quemados."
+  },
+  {
+   "titulo": "Ojo con la fuente",
+   "quien": "tu",
+   "texto": "La lista sale de blogs de herramientas de edición (mayo a octubre 2026). Es una guía, no datos oficiales de Instagram."
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Tú en cámara",
+   "descripcion": "Formatos donde tu cara y tu voz son la marca: poca edición y mucha personalidad.",
+   "agentes": [
+    {
+     "nombre": "Yapping",
+     "quien": "tu",
+     "texto": "Hablas directo al celular de una sola idea. Gancho escrito en pantalla, subtítulos y de 30 a 60 segundos."
+    },
+    {
+     "nombre": "Talking head fijo",
+     "quien": "tu",
+     "texto": "Una sola toma sin cortes ni b-roll: la confianza en ti hace el trabajo. Ideal si tu cara es la marca."
+    },
+    {
+     "nombre": "Greenscreen explica",
+     "quien": "cl",
+     "texto": "Tú grabas; Claude cambia las imágenes o capturas al lado cada 4 a 6 segundos sobre tu voz."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Explicar con visuales",
+   "descripcion": "Una voz que explica mientras la pantalla cambia: para temas con datos o ideas densas.",
+   "agentes": [
+    {
+     "nombre": "Vox / video ensayo",
+     "quien": "cl",
+     "texto": "Voz calmada y autoritaria con mapas, gráficas y rótulos. La imagen cambia cada 8 a 10 segundos."
+    },
+    {
+     "nombre": "Brainrot stack",
+     "quien": "cl",
+     "texto": "Capas apiladas (tú, gameplay, subtítulos de colores) con cortes cada 0.6 a 0.8 segundos. Para contenido muy denso."
+    },
+    {
+     "nombre": "POV escenario",
+     "quien": "tu",
+     "texto": "Metes al espectador en una historia en primera persona de unos 30 segundos, con un giro al final."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Producto y estilo",
+   "descripcion": "Formatos para mostrar un producto, una rutina o un lugar sin que parezca anuncio.",
+   "agentes": [
+    {
+     "nombre": "UGC reseña",
+     "quien": "tu",
+     "texto": "Como un cliente real grabando con el celular en casa y luz natural, con un acercamiento al producto."
+    },
+    {
+     "nombre": "Flat-lay estético",
+     "quien": "tu",
+     "texto": "Objetos vistos desde arriba con luz suave y colores pastel o ámbar, revelados uno por uno."
+    },
+    {
+     "nombre": "Cinemático con celular",
+     "quien": "tu",
+     "texto": "Celular con tripié o gimbal, exposición manual y un mismo filtro de color con poco grano para verse de cine."
+    }
+   ]
+  },
+  {
+   "nombre": "4 · Ambiente y sonido",
+   "descripcion": "Formatos donde pesan más la imagen y el audio que lo que dices.",
+   "agentes": [
+    {
+     "nombre": "ASMR de manos",
+     "quien": "tu",
+     "texto": "Solo manos trabajando, de cerca o desde arriba, con sonido natural limpio. Sin música ni subtítulos."
+    },
+    {
+     "nombre": "Audio reactivo",
+     "quien": "cl",
+     "texto": "Visuales que se transforman con los picos del audio, en loops de 8 a 30 segundos y sin historia."
+    },
+    {
+     "nombre": "Realismo documental",
+     "quien": "tu",
+     "texto": "Zooms lentos, un solo color de grado y casi sin texto, para destacar entre el contenido normal."
+    }
+   ]
+  }
+ ],
+ "cierre": "Elige uno, úsalo 2 semanas seguidas y mide: un estilo reconocible gana a cambiar de formato cada día."
+}

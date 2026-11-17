@@ -1,0 +1,112 @@
+{
+ "origen_x": 15000,
+ "titulo1": "Edita todos tus Videos",
+ "titulo2": "Automáticamente con",
+ "barra": "1 estilo que te gusta     |     1 prompt     |     Todos tus videos editados igual",
+ "dueno": {
+  "barra": "Dueño: Tú",
+  "ancho": 560,
+  "texto": "Eliges el estilo que te gusta, le pasas tus videos y apruebas o corriges cada edición."
+ },
+ "jefe": {
+  "barra": "Claude · Jefe de edición",
+  "ancho": 820,
+  "quien": "cl",
+  "texto": "Convierte el video que le mandas en una plantilla y edita cada video nuevo con ese mismo estilo."
+ },
+ "laterales": [
+  {
+   "titulo": "El link del video que te gusta",
+   "quien": "tu",
+   "texto": "Lo copias desde Instagram y se lo pegas a Claude.",
+   "placeholder": "Pega aquí el link del reel"
+  },
+  {
+   "titulo": "El prompt exacto",
+   "quien": "tu",
+   "texto": "Se lo envías a Claude junto con el link. Lo recibes al comentar la palabra “Claude”."
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Estilo",
+   "ancho": 340,
+   "descripcion": "Buscas en Instagram un estilo de edición que te guste y que vaya con tu marca personal.",
+   "agentes": [
+    {
+     "nombre": "Eliges tu estilo",
+     "quien": "tu",
+     "texto": "Entras a Instagram, buscas un video con el estilo de edición que te gusta y copias su link."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Plantilla",
+   "ancho": 380,
+   "descripcion": "Le pegas el link a Claude con un prompt y convierte ese video en una plantilla.",
+   "agentes": [
+    {
+     "nombre": "Pegas link y prompt",
+     "quien": "tu",
+     "texto": "Le envías a Claude el link del video junto con el prompt exacto."
+    },
+    {
+     "nombre": "Analiza el estilo",
+     "quien": "cl",
+     "texto": "Baja el video y lo desglosa: ritmo de cortes, subtítulos, zooms, transiciones y música."
+    },
+    {
+     "nombre": "Crea la plantilla",
+     "quien": "cl",
+     "texto": "Guarda ese estilo como una plantilla con nombre, lista para usarla las veces que quieras."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Edición",
+   "ancho": 360,
+   "descripcion": "Cada vez que le envías un video, Claude lo edita igual que la plantilla.",
+   "agentes": [
+    {
+     "nombre": "Prepara tu video",
+     "quien": "cl",
+     "texto": "Transcribe tu video y quita silencios y tomas repetidas."
+    },
+    {
+     "nombre": "Aplica la plantilla",
+     "quien": "cl",
+     "texto": "Edita tu video con el mismo estilo del que le enviaste antes: cortes, subtítulos, zooms y música."
+    },
+    {
+     "nombre": "Se revisa solo",
+     "quien": "cl",
+     "texto": "Revisa su propio video fotograma por fotograma y corrige lo que falle antes de entregártelo."
+    }
+   ]
+  },
+  {
+   "nombre": "4 · Más estilos",
+   "ancho": 440,
+   "descripcion": "No necesitas quedarte con un solo estilo: puedes agregar todos los que quieras.",
+   "agentes": [
+    {
+     "nombre": "Agregas más estilos",
+     "quien": "tu",
+     "texto": "Repites el proceso con otro link de Instagram y Claude suma otra plantilla."
+    },
+    {
+     "nombre": "Catálogo de plantillas",
+     "quien": "cl",
+     "texto": "Guarda todas tus plantillas con su nombre para que no se mezclen."
+    },
+    {
+     "nombre": "Pides la que quieras",
+     "quien": "tu",
+     "texto": "Le dices con qué plantilla editar cada video. Hay que pedírselo de la manera correcta."
+    }
+   ]
+  }
+ ],
+ "cierre": "Comenta la palabra “Claude” y te envío el prompt exacto para tener muchas plantillas.",
+ "ancho_titulo2": 2750
+}

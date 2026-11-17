@@ -1,0 +1,88 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Serif;src:url(fuentes/InstrumentSerif-Regular.ttf)}
+html,body{margin:0;width:1920px;height:1080px;background:transparent;overflow:hidden;font-family:"Helvetica Neue",Arial,sans-serif;color:#fff}
+.subs{position:absolute;left:0;right:0;bottom:78px;text-align:center;font:700 54px Menlo,monospace;letter-spacing:-1px;
+  text-shadow:0 3px 14px rgba(0,0,0,.9),0 0 3px rgba(0,0,0,.8)}
+.subs span{display:inline-block}
+.subs .k{color:#FFE33B}
+.x{position:absolute;will-change:transform,opacity}
+#titulo{left:90px;top:240px}
+#titulo .a{font:600 40px Menlo,monospace;color:#F08A3C;letter-spacing:1px;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+#titulo .b{font:118px Serif;line-height:1;position:relative;text-shadow:0 4px 30px rgba(0,0,0,.7)}
+#raya{position:absolute;left:-8px;top:52%;height:9px;background:#F08A3C;border-radius:5px;box-shadow:0 0 18px rgba(240,138,60,.7)}
+#cien{left:90px;top:70px;font:185px Serif;line-height:1;background:linear-gradient(180deg,#FFE9A8,#F08A3C);-webkit-background-clip:text;color:transparent;
+  filter:drop-shadow(0 6px 24px rgba(0,0,0,.6))}
+#cien small{display:block;font:600 34px Menlo,monospace;color:#fff;-webkit-text-fill-color:#fff;letter-spacing:2px;margin-top:6px}
+.tarjeta{background:rgba(14,12,11,.78);border:1.5px solid rgba(255,255,255,.14);border-radius:26px;backdrop-filter:blur(14px);box-shadow:0 20px 60px rgba(0,0,0,.55)}
+#lista{right:90px;top:80px;width:520px;padding:30px 36px}
+#lista h4{margin:0 0 18px;font:600 26px Menlo,monospace;color:#F08A3C;letter-spacing:2px}
+#lista .it{display:flex;align-items:center;gap:20px;font:600 40px "Helvetica Neue",Arial;margin:14px 0}
+#lista .ck{width:42px;height:42px;border-radius:12px;border:2.5px solid rgba(255,255,255,.35);display:grid;place-items:center;font-size:30px;color:#14100c}
+#sello{left:1180px;top:200px;padding:18px 40px;border:7px solid #F08A3C;border-radius:16px;color:#F08A3C;font:800 92px "Helvetica Neue",Arial;letter-spacing:6px;
+  background:rgba(10,8,6,.35);text-shadow:0 0 20px rgba(240,138,60,.5)}
+#cta{right:110px;top:640px;width:640px;height:104px;border-radius:52px;display:flex;align-items:center;padding:0 16px 0 22px;box-sizing:border-box;gap:18px}
+#cta .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#F08A3C,#FFE33B)}
+#cta .tx{flex:1;white-space:nowrap;font:600 34px Menlo,monospace;color:rgba(255,255,255,.45)}
+#cta .tx.lleno{color:#fff;font-size:46px;font-weight:800}
+#cta.tarjeta{background:rgba(22,17,13,.93);border:2.5px solid #EDA43C;box-shadow:0 0 40px rgba(237,164,60,.35),0 20px 60px rgba(0,0,0,.6)}
+#cta .env{width:74px;height:74px;border-radius:50%;background:#F08A3C;display:grid;place-items:center}
+#flecha{right:420px;top:770px;width:70px}
+#dm{left:100px;top:90px;width:600px;padding:26px 30px;display:flex;gap:22px;align-items:center}
+#dm .av{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,#F08A3C,#FFE33B);flex:none}
+#dm b{font:700 32px "Helvetica Neue",Arial}
+#dm p{margin:6px 0 0;font:500 28px Menlo,monospace;color:#FFE33B}
+</style></head><body>
+<div id="titulo" class="x"><div class="a">YA NO OCUPAS</div><div class="b">saber editar<div id="raya"></div></div></div>
+<div id="cien" class="x"><span id="num">0</span>%<small>HECHO CON IA</small></div>
+<div id="lista" class="x tarjeta"><h4>EDITADO POR CLAUDE</h4></div>
+<div id="sello" class="x">SIN USAR</div>
+<div id="cta" class="x tarjeta"><div class="av"></div><div class="tx" id="ctatx">Agrega un comentario…</div>
+  <div class="env"><svg width="38" height="38" viewBox="0 0 24 24"><path d="M3 11.5 21 3l-8.5 18-2.2-7.3z" fill="#fff"/></svg></div></div>
+<svg id="flecha" class="x" viewBox="0 0 70 150"><path d="M35 6v120M10 100l25 30 25-30" stroke="#FFE33B" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div id="dm" class="x tarjeta"><div class="av"></div><div><b>Mensaje nuevo</b><p>📎 plantilla-editor.zip</p></div></div>
+<script src="palabras7544.js"></script>
+<script type="module">
+import { cl, pr, sale, rebote, ventana, subtitulos } from './comun.js';
+const $ = id => document.getElementById(id);
+const subs = subtitulos(document.body, window.PALABRAS,
+  ['editar', 'redes', 'sociales', '100%', 'inteligencia', 'artificial', 'subtítulos', 'imágenes', 'animaciones', 'música', 'efectos', 'sonido',
+   'todo', 'absolutamente', 'herramienta', 'edición', 'editor', 'plantilla']);
+const items = [['Subtítulos', 6.72], ['Imágenes', 7.54], ['Animaciones', 8.24], ['Música', 9.58], ['Efectos de sonido', 10.34]];
+$('lista').insertAdjacentHTML('beforeend', items.map(([n]) => `<div class="it"><div class="ck">✓</div>${n}</div>`).join(''));
+const ver = (el, o, tr) => { el.style.opacity = o; el.style.transform = tr; el.style.visibility = o > .001 ? 'visible' : 'hidden'; };
+
+window.pinta = t => {
+  subs(t);
+  // 0–1.4: "saber editar" tachado
+  let v = ventana(t, .05, 1.42, .2); ver($('titulo'), v, `translateX(${(1 - v) * -40}px)`);
+  $('titulo').style.filter = `blur(${(1 - v) * 10}px)`;
+  $('raya').style.width = `${sale(pr(t, .88, .3)) * 102}%`;
+  // 4.1–6.4: 100 %
+  v = ventana(t, 4.1, 6.42, .2); ver($('cien'), v, `scale(${.8 + .2 * rebote(pr(t, 4.1, .35))})`);
+  $('num').textContent = Math.round(100 * sale(pr(t, 4.15, .5)));
+  // 6.5–10.95: lista que se va palomeando
+  v = ventana(t, 6.5, 10.95, .2); ver($('lista'), v, `translateX(${(1 - v) * 60}px)`);
+  [...$('lista').querySelectorAll('.it')].forEach((el, i) => {
+    const q = rebote(pr(t, items[i][1] - .05, .25)), on = t >= items[i][1] - .05;
+    el.style.opacity = .35 + .65 * cl(q); const ck = el.firstChild;
+    ck.style.background = on ? '#FFE33B' : 'transparent'; ck.style.borderColor = on ? '#FFE33B' : 'rgba(255,255,255,.35)';
+    ck.style.transform = `scale(${on ? q : 1})`; ck.style.color = on ? '#14100c' : 'transparent';
+  });
+  // 15.0–16.6: sello "SIN USAR" sobre la vitrina
+  v = ventana(t, 15.0, 16.62, .12); ver($('sello'), cl(pr(t, 15.0, .08)) * (1 - sale(pr(t, 16.5, .12))), `rotate(-9deg) scale(${2.2 - 1.2 * sale(pr(t, 15.0, .16))})`);
+  // 20.3–22.1: caja de comentario con EDITOR + flecha
+  v = ventana(t, 20.3, 22.45, .22); ver($('cta'), v, `translateY(${(1 - v) * 40}px) scale(${.92 + .08 * v})`);
+  const n = Math.floor(cl((t - 21.62) / .06, 0, 6)); $('ctatx').textContent = n ? 'EDITOR'.slice(0, n) + (n < 6 ? '|' : '') : 'Agrega un comentario…';
+  $('ctatx').className = 'tx' + (n ? ' lleno' : '');
+  $('cta').querySelector('.env').style.transform = `scale(${1 + .18 * Math.sin(cl((t - 22.0) / .25) * Math.PI)})`;
+  ver($('flecha'), ventana(t, 20.5, 22.45, .2), `translateY(${Math.sin(t * 9) * 12}px)`);
+  // 22.5–24.2: llega el DM con la plantilla
+  v = ventana(t, 22.55, 24.4, .25); ver($('dm'), v, `translateY(${(1 - rebote(pr(t, 22.55, .4))) * -60}px)`);
+};
+await document.fonts.ready;
+window.pinta(0);
+window.listo = true;
+</script>
+<script>window.listo = new Promise(r => { const c = () => window.listo === true ? r() : setTimeout(c, 30); c(); });</script>
+</body></html>

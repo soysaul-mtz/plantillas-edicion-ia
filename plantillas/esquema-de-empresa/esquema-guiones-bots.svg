@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<line data-type="divider" x1="93820" y1="970" x2="93820" y2="1100" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93820" y1="1200" x2="93820" y2="1230" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93820" y1="1430" x2="93820" y2="1530" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93820" y1="1630" x2="93820" y2="1660" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93120" y1="1780" x2="93370" y2="1780" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94270" y1="1780" x2="94520" y2="1780" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93820" y1="1900" x2="93820" y2="2050" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90420" y1="2050" x2="97000" y2="2050" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90420" y1="2050" x2="90420" y2="2200" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90420" y1="2300" x2="90420" y2="2340" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90420" y1="2560" x2="90420" y2="2620" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90420" y1="2880" x2="90420" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90200" y1="2980" x2="90640" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90200" y1="2980" x2="90200" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="90640" y1="2980" x2="90640" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="92120" y1="2050" x2="92120" y2="2200" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="92120" y1="2300" x2="92120" y2="2340" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="92120" y1="2560" x2="92120" y2="2620" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="92120" y1="2880" x2="92120" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="91240" y1="2980" x2="93000" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="91240" y1="2980" x2="91240" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="91680" y1="2980" x2="91680" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="92120" y1="2980" x2="92120" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="92560" y1="2980" x2="92560" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93000" y1="2980" x2="93000" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94040" y1="2050" x2="94040" y2="2200" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94040" y1="2300" x2="94040" y2="2340" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94040" y1="2560" x2="94040" y2="2620" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94040" y1="2880" x2="94040" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93600" y1="2980" x2="94480" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="93600" y1="2980" x2="93600" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94040" y1="2980" x2="94040" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="94480" y1="2980" x2="94480" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95520" y1="2050" x2="95520" y2="2200" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95520" y1="2300" x2="95520" y2="2340" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95520" y1="2560" x2="95520" y2="2620" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95520" y1="2880" x2="95520" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95080" y1="2980" x2="95960" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95080" y1="2980" x2="95080" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95520" y1="2980" x2="95520" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="95960" y1="2980" x2="95960" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="97000" y1="2050" x2="97000" y2="2200" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="97000" y1="2300" x2="97000" y2="2340" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="97000" y1="2560" x2="97000" y2="2620" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="97000" y1="2880" x2="97000" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="96560" y1="2980" x2="97440" y2="2980" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="96560" y1="2980" x2="96560" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="97000" y1="2980" x2="97000" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<line data-type="divider" x1="97440" y1="2980" x2="97440" y2="3056" stroke="#313131" stroke-width="2" data-line-style="dashed"/>
+<rect x="90000" y="0" width="7640" height="850" rx="0" fill="#DDE1F9" stroke="#9AA5D6" stroke-width="2"/>
+<textArea x="92020" y="70" width="3600" font-family="formular" font-size="240" fill="#1E2150" text-align="center" font-weight="bold">Cómo sacar +100 ideas</textArea>
+<textArea x="90520" y="420" width="6600" font-family="formular" font-size="240" fill="#1E2150" text-align="center">para grabar con Grok Bot</textArea>
+<rect x="92020" y="820" width="3600" height="150" rx="14" fill="#1a1a1a" stroke="none" data-content="5 niveles     |     1 guion por ángulo     |     Nada sale sin tu aprobación" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93540" y="1100" width="560" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="Dueño: Saúl" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93370" y="1230" width="900" height="200" rx="16" fill="#F9DDD5" stroke="#D97757" stroke-width="2" data-content="Das la orden o una idea, apruebas todo y grabas los guiones aprobados. Nada se publica sin ti." data-text-color="#1a1a1a" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93410" y="1530" width="820" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="Bot de Ángulos · Coordinador" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93370" y="1660" width="900" height="240" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="93398" y="1684" width="160" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="93398" y="1744" width="844" font-family="formular" font-size="28" fill="#595959" text-align="left">Analiza al cliente ideal, propone 6 a 8 ángulos, reúne los votos y coordina la votación de cada guion.</textArea>
+<rect x="92520" y="1230" width="600" height="670" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="92550" y="1262" width="130" height="44" rx="22" fill="#F9DDD5" stroke="none" data-content="TÚ" data-text-color="#1a1a1a" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="92550" y="1330" width="540" font-family="formular" font-size="40" fill="#1a1a1a" text-align="left" font-weight="bold">Cliente ideal</textArea>
+<textArea x="92550" y="1450" width="540" font-family="formular" font-size="28" fill="#595959" text-align="left">Dueño de negocio de LATAM, de 28 a 45 años, que no publica contenido. Para él se escribe todo.</textArea>
+<rect x="94520" y="1230" width="600" height="670" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="94550" y="1262" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="94550" y="1330" width="540" font-family="formular" font-size="40" fill="#1a1a1a" text-align="left" font-weight="bold">Regla de votos</textArea>
+<textArea x="94550" y="1450" width="540" font-family="formular" font-size="28" fill="#595959" text-align="left">3 o más BIEN: aprobado. 3 o más MAL: regresa a Imhotep con las razones y se vuelve a votar.</textArea>
+<rect x="90190" y="2200" width="460" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="1 · Estrategia" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="90040" y="2340" width="760" height="220" rx="12" fill="#f3f3f3" stroke="none" data-content="Convierte tu orden en ángulos de comunicación para debatir." data-text-color="#595959" data-font-size="26" data-font-family="formular"/>
+<circle cx="90420" cy="2750" r="130" fill="#ffffff" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="5,5"/>
+<rect x="90378" y="2702" width="84" height="72" rx="0" fill="#D97757" stroke="none"/>
+<rect x="90342" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="90462" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="90390" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="90426" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="90390" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<rect x="90438" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<circle cx="90200" cy="3080" r="24" fill="#595959" stroke="none" data-content="1" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="90000" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Recibe tu orden" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="90000" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="90028" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="90028" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Toma tu tema o tu “dame guiones” y analiza al cliente ideal antes de proponer nada.</textArea>
+<circle cx="90640" cy="3080" r="24" fill="#595959" stroke="none" data-content="2" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="90440" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Propone 6 a 8 ángulos" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="90440" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="90468" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="90468" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Dolor, deseo, enemigo común, mito vs. realidad, historia, prueba, antes y después, urgencia.</textArea>
+<rect x="91800" y="2200" width="640" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="2 · Comité de debate" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="91740" y="2340" width="760" height="220" rx="12" fill="#f3f3f3" stroke="none" data-content="5 bots, cada uno con el estilo de un referente, votan los mejores ángulos." data-text-color="#595959" data-font-size="26" data-font-family="formular"/>
+<circle cx="92120" cy="2750" r="130" fill="#ffffff" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="5,5"/>
+<rect x="92078" y="2702" width="84" height="72" rx="0" fill="#D97757" stroke="none"/>
+<rect x="92042" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="92162" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="92090" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="92126" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="92090" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<rect x="92138" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<circle cx="91240" cy="3080" r="24" fill="#595959" stroke="none" data-content="1" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="91040" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Estilo Hormozi" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="91040" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="91068" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="91068" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Oferta y ecuación de valor.</textArea>
+<circle cx="91680" cy="3080" r="24" fill="#595959" stroke="none" data-content="2" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="91480" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Estilo Iman Gadzhi" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="91480" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="91508" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="91508" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Posicionamiento premium y estética.</textArea>
+<circle cx="92120" cy="3080" r="24" fill="#595959" stroke="none" data-content="3" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="91920" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Estilo Ramiro Cubría" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="91920" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="91948" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="91948" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Contracorriente y contenido que vende.</textArea>
+<circle cx="92560" cy="3080" r="24" fill="#595959" stroke="none" data-content="4" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="92360" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Estilo Víctor Heras" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="92360" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="92388" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="92388" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Claridad: que lo entienda cualquiera.</textArea>
+<circle cx="93000" cy="3080" r="24" fill="#595959" stroke="none" data-content="5" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="92800" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Estilo Gary Vee" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="92800" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="92828" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="92828" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Documentar, volumen y atención.</textArea>
+<rect x="93810" y="2200" width="460" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="3 · Producción" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93660" y="2340" width="760" height="220" rx="12" fill="#f3f3f3" stroke="none" data-content="Imhotep escribe un guion por cada ángulo ganador." data-text-color="#595959" data-font-size="26" data-font-family="formular"/>
+<circle cx="94040" cy="2750" r="130" fill="#ffffff" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="5,5"/>
+<rect x="93998" y="2702" width="84" height="72" rx="0" fill="#D97757" stroke="none"/>
+<rect x="93962" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="94082" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="94010" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="94046" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="94010" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<rect x="94058" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<circle cx="93600" cy="3080" r="24" fill="#595959" stroke="none" data-content="1" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="93400" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Imhotep, guionista" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93400" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="93428" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="93428" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Escribe un guion por ángulo: gancho, promesa, cuerpo y CTA.</textArea>
+<circle cx="94040" cy="3080" r="24" fill="#595959" stroke="none" data-content="2" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="93840" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Solo datos reales" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="93840" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="93868" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="93868" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Usa únicamente tus cifras y casos, con marcadores [CIFRA REAL] y [CASO REAL] para que los llenes.</textArea>
+<circle cx="94480" cy="3080" r="24" fill="#595959" stroke="none" data-content="3" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="94280" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Al coordinador" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="94280" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="94308" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="94308" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Manda los guiones al Bot de Ángulos, no a ti.</textArea>
+<rect x="95170" y="2200" width="700" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="4 · Control de calidad" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="95140" y="2340" width="760" height="220" rx="12" fill="#f3f3f3" stroke="none" data-content="El mismo comité de 5 vota cada guion." data-text-color="#595959" data-font-size="26" data-font-family="formular"/>
+<circle cx="95520" cy="2750" r="130" fill="#ffffff" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="5,5"/>
+<rect x="95478" y="2702" width="84" height="72" rx="0" fill="#D97757" stroke="none"/>
+<rect x="95442" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="95562" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="95490" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="95526" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="95490" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<rect x="95538" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<circle cx="95080" cy="3080" r="24" fill="#595959" stroke="none" data-content="1" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="94880" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Vota BIEN o MAL" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="94880" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="94908" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="94908" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Cada bot vota; si es MAL, da una razón corta.</textArea>
+<circle cx="95520" cy="3080" r="24" fill="#595959" stroke="none" data-content="2" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="95320" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="3 o más BIEN" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="95320" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="95348" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="95348" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Guion APROBADO. Pasa a la entrega.</textArea>
+<circle cx="95960" cy="3080" r="24" fill="#595959" stroke="none" data-content="3" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="95760" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="3 o más MAL" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="95760" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="95788" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="95788" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Regresa a Imhotep con las razones, lo rehace y vuelve a votación hasta aprobarse.</textArea>
+<rect x="96815" y="2200" width="370" height="100" rx="6" fill="#1a1a1a" stroke="none" data-content="5 · Entrega" data-text-color="#ffffff" data-font-size="48" data-font-family="formular" data-font-weight="bold"/>
+<rect x="96620" y="2340" width="760" height="220" rx="12" fill="#f3f3f3" stroke="none" data-content="Solo llegan a ti los guiones aprobados." data-text-color="#595959" data-font-size="26" data-font-family="formular"/>
+<circle cx="97000" cy="2750" r="130" fill="#ffffff" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="5,5"/>
+<rect x="96958" y="2702" width="84" height="72" rx="0" fill="#D97757" stroke="none"/>
+<rect x="96922" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="97042" y="2738" width="36" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="96970" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="97006" y="2774" width="24" height="24" rx="0" fill="#D97757" stroke="none"/>
+<rect x="96970" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<rect x="97018" y="2726" width="12" height="12" rx="0" fill="#1a1a1a" stroke="none"/>
+<circle cx="96560" cy="3080" r="24" fill="#595959" stroke="none" data-content="1" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="96360" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Imhotep te entrega" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="96360" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="96388" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="96388" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Guiones aprobados, con el conteo de votos de cada uno.</textArea>
+<circle cx="97000" cy="3080" r="24" fill="#595959" stroke="none" data-content="2" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="96800" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Notas y pendientes" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="96800" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="96828" y="3258" width="130" height="44" rx="22" fill="#DDE1F9" stroke="none" data-content="GROK" data-text-color="#1E2150" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="96828" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Notas opcionales y la lista de datos reales que te falta llenar.</textArea>
+<circle cx="97440" cy="3080" r="24" fill="#595959" stroke="none" data-content="3" data-text-color="#ffffff" data-font-size="26" data-font-weight="bold" data-font-family="formular"/>
+<rect x="97240" y="3140" width="400" height="64" rx="6" fill="#ececec" stroke="none" data-content="Tú decides" data-text-color="#595959" data-font-size="28" data-font-family="formular" data-font-weight="bold"/>
+<rect x="97240" y="3230" width="400" height="360" rx="16" fill="#ffffff" stroke="#d9d9d9" stroke-width="2"/>
+<rect x="97268" y="3258" width="130" height="44" rx="22" fill="#F9DDD5" stroke="none" data-content="TÚ" data-text-color="#1a1a1a" data-font-size="20" data-font-family="formular" data-font-weight="bold"/>
+<textArea x="97268" y="3322" width="344" font-family="formular" font-size="26" fill="#595959" text-align="left">Revisas, grabas y decides qué se publica.</textArea>
+<rect x="92220" y="3730" width="3200" height="150" rx="24" fill="#F9DDD5" stroke="none" data-content="Ciclo: ángulos → debate → guiones → votación → si sale MAL vuelve a Imhotep → tú." data-text-color="#1a1a1a" data-font-size="40" data-font-family="formular" data-font-weight="bold"/>
+</svg>

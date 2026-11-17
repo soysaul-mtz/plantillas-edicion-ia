@@ -1,0 +1,17 @@
+[
+ {
+  "nombre": "Reel VIDEO · ejemplo",
+  "activo": false,
+  "automationId": "<id de la automatización en Zernio>",
+  "accountId": "<id de tu cuenta en Zernio>",
+  "postId": "<id del post>",
+  "reel": "https://www.instagram.com/reel/XXXX/",
+  "dmMessage": "Claro, te envío el PDF de una 🫡",
+  "boton": "Ver el PDF 📄",
+  "url": "<link público del PDF o del Doc>",
+  "respuestasPublicas": [
+   "Ya te envié DM 🫡",
+   "Ya te envié mensaje ¿Te llegó? 🤔"
+  ]
+ }
+]

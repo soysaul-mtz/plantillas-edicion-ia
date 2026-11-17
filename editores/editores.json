@@ -1,0 +1,225 @@
+[
+ {
+  "id": "orvi99",
+  "nombre": "Editor Anuncios",
+  "alias": [
+   "orvi",
+   "orvi 99",
+   "orbi 99",
+   "orbi",
+   "editor v2",
+   "anuncios orvi",
+   "vsl orvi"
+  ],
+  "carpeta": "editor-anuncios",
+  "para": "Anuncios verticales (iPhone, crudo con tomas repetidas y plática de grabación) y VSL horizontales de la marca del cliente, seguro de vida, asesor el asesor. Quita silencios y retomas, subtítulos palabra por palabra, zooms con seguimiento de cara, transiciones en cada corte, gráficos de marca (navy #274760, celeste #BAD2DF).",
+  "arranque": ".venv/bin/python prepare.py <video> proyectos/<nombre>  →  build.py  →  cues.js  →  node render.mjs proyectos/<nombre>",
+  "guia": "memorias orvi99-editor-v2, feedback-ads-edicion-ritmo, feedback-fluidez-animaciones, orvi99-vsl-animaciones",
+  "señales": {
+   "rutas": [
+    "SEGUROS",
+    "ORVI",
+    "CONTENIDO",
+    "/ADS",
+    "/VSL"
+   ],
+   "palabras": [
+    "orvi",
+    "seguro de vida",
+    "seguro",
+    "póliza",
+    "asesoría",
+    "asesor",
+    "santiago",
+    "retiro",
+    "ahorro",
+    "aseguradora",
+    "suma asegurada",
+    "beneficiarios",
+    "agenda"
+   ],
+   "orientacion": "vertical",
+   "entrevista": false
+  }
+ },
+ {
+  "id": "testimoniales-mas",
+  "nombre": "Editor Testimoniales MAS",
+  "alias": [
+   "testimoniales",
+   "testimoniales mas",
+   "editor testimoniales mas",
+   "mas",
+   "mastermind",
+   "testimonio"
+  ],
+  "carpeta": "editor-testimoniales/editor",
+  "para": "Entrevistas horizontales a alumnos/clientes (preguntas de un entrevistador fuera de cuadro) para armar testimoniales emotivos que venden el MAS (programa del cliente, el mentor). Mejores partes → armado → subtítulos estilo finish.edits → música Epidemic; subtítulos para las tomas de stock del V1 de Saúl.",
+  "arranque": ".venv/bin/python transcribir.py <video> ../proyectos/<nombre>  (luego proponer mejores partes y esperar aprobación)",
+  "guia": "skill testimoniales-mas y editor-testimoniales/README.md",
+  "señales": {
+   "rutas": [
+    "MAS",
+    "Testimonial",
+    "MASTERMIND",
+    "VALLARTA"
+   ],
+   "palabras": [
+    "mastermind",
+    "programa más",
+    "el mentor",
+    "apellido",
+    "inscrib",
+    "antes de entrar",
+    "cuál es tu nombre",
+    "a qué te dedicas",
+    "qué le dirías",
+    "recomendar este programa",
+    "techos mentales"
+   ],
+   "orientacion": "horizontal",
+   "entrevista": true
+  }
+ },
+ {
+  "id": "saul-pro",
+  "nombre": "Saúl Pro",
+  "alias": [
+   "saul pro",
+   "saúl pro",
+   "estilo cine",
+   "cine",
+   "estilo de la referencia",
+   "plantilla saul pro"
+  ],
+  "carpeta": "estilo-cine",
+  "para": "Reels de la marca personal de Saúl (@tu_usuario: IA + marca personal, contenido para curso del cliente) en estilo cinematográfico: tipografía palabra por palabra (línea chica + palabra gigante), Saúl recortado del fondo sobre papel/negro con texto gigante detrás, escenas 3D (logos de apps, ojo, teléfonos, prompt, link, comentario), textura de película, transiciones con sfx y música Epidemic. Material crudo con retomas: corta con prepare/build del Editor Anuncios y luego arma cine.json.",
+  "arranque": "orvi99 prepare.py <video> proyectos/<n>/corte → build.py --drop … → segmentar.swift + cuadros → cine.json → node estilo-cine/render.mjs proyectos/<n>",
+  "guia": "memorias estilo-cine-3d, saul-pro-edicion; README de estilo-cine; Word ~/Documents/Saúl Pro.docx",
+  "señales": {
+   "rutas": [
+    "CONTENIDO",
+    "/Dolor",
+    "/Valor",
+    "/Autoridad",
+    "/Objeciones",
+    "/Metodolog",
+    "Video reacciones"
+   ],
+   "palabras": [
+    "inteligencia artificial",
+    "claude",
+    "marca personal",
+    "prompt",
+    "skills",
+    "contenido",
+    "instagram",
+    "chatgpt",
+    "legendaria",
+    "editar",
+    "video"
+   ],
+   "orientacion": "vertical",
+   "entrevista": false
+  }
+ },
+ {
+  "id": "saul-pro-3d",
+  "nombre": "Saúl Pro 3D",
+  "alias": [
+   "saul pro 3d",
+   "saúl pro 3d",
+   "pro 3d",
+   "top 5",
+   "estilo top 5",
+   "plantilla saul pro 3d"
+  ],
+  "carpeta": "estilo-cine",
+  "para": "Reels de Saúl tipo lista (\"las top 5 herramientas de IA…\", \"la primera es…\"): Saúl Pro con su fondo real y filtro de piel, más la intro de la ventana naranja Top N con candados, un bloque 3D por herramienta que sube, se enciende y gira (fondo oscuro con motas doradas, quemado de luz), la interfaz de cada herramienta emulada en código a pantalla completa, y un cierre con la ventana desbloqueada, CTA y DM.",
+  "arranque": "metodo_corte.py (recorte.vertical) → segmentar + cuadros + piel.py → escaleta → quitar_tramos.py si hay tropiezos → cine.json con visual icono3d / interfaz / persona + top5 → node estilo-cine/render.mjs proyectos/<n>",
+  "guia": "plantillas/saul-pro-3d/ESTILO.md (receta + cine_base.json); Word ~/Documents/Saúl Pro 3D.docx; memorias saul-pro-3d, estilo-cine-3d, feedback_fondo-real-interfaces-full",
+  "señales": {
+   "rutas": [
+    "CONTENIDO",
+    "Replica viral",
+    "/Top"
+   ],
+   "palabras": [
+    "top 5",
+    "top cinco",
+    "5 herramientas",
+    "cinco herramientas",
+    "herramientas",
+    "la primera es",
+    "la segunda es",
+    "la tercera es",
+    "la cuarta es",
+    "la quinta",
+    "notebooklm",
+    "higgsfield",
+    "heygen",
+    "eleven labs",
+    "napkin",
+    "chatgpt"
+   ],
+   "orientacion": "vertical",
+   "entrevista": false
+  }
+ },
+ {
+  "id": "estilo-apple",
+  "nombre": "Estilo Apple",
+  "alias": [
+   "estilo apple",
+   "apple",
+   "comercial apple",
+   "keynote",
+   "opus 5.5"
+  ],
+  "carpeta": "plantillas/estilo-apple",
+  "para": "Videos con look de comercial/keynote de Apple: degradado radial de apertura + título, producto/elemento central girando en 3D, frases palabra por palabra con blur-in, transiciones con motion blur, fondo marfil. Opcional: montado en pantalla de MacBook con etiqueta 'hecho con IA' (opus 5.5).",
+  "arranque": "leer ESTILO.md (desglose cuadro a cuadro de referencia/original.mp4) y preguntar lectura A (animación) o B (formato Mac + etiqueta)",
+  "guia": "plantillas/estilo-apple/ESTILO.md, memoria estilo-apple",
+  "señales": {
+   "rutas": [
+    "apple",
+    "APPLE"
+   ],
+   "palabras": [
+    "apple",
+    "airpods",
+    "iphone",
+    "macbook",
+    "opus"
+   ],
+   "orientacion": "vertical",
+   "entrevista": false
+  }
+ },
+ {
+  "id": "editor-51",
+  "nombre": "Editor 51",
+  "alias": [
+   "editor 51",
+   "51",
+   "estilo lucca",
+   "imagenes editoriales"
+  ],
+  "carpeta": "editor-testimoniales/editor",
+  "para": "Persona a cámara en vertical + imágenes editoriales a pantalla completa (foto documental/archivo, que NO parezca IA) cada 2–4 s ilustrando la frase; subtítulos chicos a la izquierda (Helvetica + palabra clave en serif itálica), velo oscuro abajo. Referencia ~/Desktop/editor 51.mp4 (reel de Lucca Vila). Primer uso: ads CURSO de Manu (27 oct 2026).",
+  "arranque": "transcribir.py → editar.py plan/armar → imagenes.json → imagenes51.py --hoja → stock_encima.py → pages.txt → editar.py terminar (proyecto.json con \"estilo51\": true)",
+  "guia": "editor-testimoniales/EDITOR51.md · ejemplo proyectos/bgi_ads/ad7",
+  "señales": {
+   "rutas": [
+    "CURSO"
+   ],
+   "palabras": [
+    "consultoría",
+    "inteligencia artificial",
+    "agendar"
+   ],
+   "orientacion": "horizontal",
+   "entrevista": false
+  }
+ }
+]

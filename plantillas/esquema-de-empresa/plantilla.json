@@ -1,0 +1,43 @@
+{
+  "nombre": "Esquema de empresa",
+  "id": "esquema-de-empresa",
+  "uso": "Explicar un sistema o proceso paso a paso, como organigrama de una empresa (dueño, jefe, áreas y agentes), para grabar un video o armar una guía.",
+  "plataforma": "Miro (Canvas Composer SVG) + guía HTML local + PDF + captura puesta en Miro",
+  "colores": {
+    "banner": "#DDE1F9", "banner_borde": "#9AA5D6", "titulo": "#1E2150",
+    "tinta": "#1a1a1a", "texto": "#595959", "acento": "#D97757", "acento_claro": "#F9DDD5",
+    "gris_tarjeta": "#f3f3f3", "gris_chip": "#ececec", "borde": "#d9d9d9", "linea": "#313131",
+    "chip_tu": {"fondo": "#F9DDD5", "texto": "#1a1a1a"},
+    "chip_claude": {"fondo": "#DDE1F9", "texto": "#1E2150"},
+    "estado": {"hecho": ["#adf0c7", "#067429"], "en_proceso": ["#fff6b6", "#af7e04"], "pendiente": ["#e7e7e7", "#595959"], "negar": ["#ffc6c6", "#bd0a0a"]}
+  },
+  "tipografia": {
+    "miro": {"titulos": "formular (bold)", "claude": "tiempos_text (bold)"},
+    "guia_html": {"titulos": "Space Grotesk", "cuerpo": "Inter", "claude": "Instrument Serif"},
+    "tamanos_miro": {"titulo": 240, "barra_resumen": 48, "barra_etiqueta": 48, "tarjeta_titulo": 40, "tarjeta_texto": 26, "chip_nombre": 28, "chip_estado": 20}
+  },
+  "estructura": [
+    "banner lila con título en 2 líneas ('Automáticamente con ✱ Claude' en la 2ª)",
+    "barra negra de resumen (3 ideas separadas por |)",
+    "nivel 1: barra negra 'Dueño: Tú' + tarjeta rosa con borde terracota",
+    "nivel 2: barra negra del jefe (Claude) + tarjeta blanca con chip CLAUDE",
+    "tarjetas laterales opcionales (izquierda y derecha del jefe), p. ej. el link y el prompt",
+    "bus punteado hacia N áreas numeradas (barra negra con '1 · Nombre')",
+    "por área: caja gris con qué hace el área, círculo punteado con la mascota, círculos numerados y chips grises con el nombre del agente, tarjeta blanca con chip TÚ o CLAUDE y 1 a 6 líneas",
+    "recuadro rosa de cierre (CTA o ciclo de retroalimentación)"
+  ],
+  "medidas_miro": {
+    "tarjeta_agente": [400, 360], "hueco_entre_tarjetas": 40, "hueco_entre_areas": 200,
+    "banner_alto": 850, "barra_resumen": [3600, 150], "mascota_circulo_radio": 130,
+    "y": {"barra_resumen": 820, "dueno": 1100, "jefe": 1530, "bus": 2050, "areas": 2200, "descripcion": 2340, "circulo": 2750, "tarjetas": 3230, "cierre": 3730}
+  },
+  "reglas": [
+    "Texto de tarjeta: máximo ~140 caracteres (6 líneas a 26 px en 344 px de ancho).",
+    "Nunca usar <b> ni <br> dentro de textArea: Miro lo muestra mal. Un párrafo = un textArea, sin etiquetas.",
+    "Siempre textArea con ancho explícito; los <text> sueltos se miden mal y se parten en dos líneas.",
+    "Formas con texto adentro (barras, chips, tarjetas con un solo texto) usan data-content, nunca texto encima.",
+    "Sin sombras ni degradados; un solo grosor de borde (2 px); líneas punteadas solo para conectar.",
+    "Máximo 3 familias de color por tablero: lila, terracota y neutros (más verde/amarillo/rojo solo para estados)."
+  ],
+  "flujo": ["1. dibujar en Miro con generar.py", "2. guía HTML local con el prompt", "3. al confirmar Saúl: empaquetar.py (PDF + capturas)", "4. subir captura-bloques.png sobre la tarjeta del prompt en Miro"]
+}

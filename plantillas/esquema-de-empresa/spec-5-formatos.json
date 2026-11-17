@@ -1,0 +1,135 @@
+{
+ "origen_x": 35000,
+ "titulo1": "5 Formatos que Funcionan",
+ "titulo2": "Editados con",
+ "barra": "5 formatos     |     Elige uno por video     |     2 semanas por estilo",
+ "dueno": {
+  "barra": "Dueño: Tú",
+  "texto": "Eliges el formato, lo usas 2 semanas seguidas y apruebas o corriges cada edición."
+ },
+ "jefe": {
+  "barra": "Claude · Jefe de edición",
+  "quien": "cl",
+  "texto": "Edita cada video con el formato elegido: subtítulos, cortes, zooms y los gráficos o escenas que cada formato necesita."
+ },
+ "laterales": [
+  {
+   "titulo": "De dónde salen",
+   "quien": "tu",
+   "texto": "Yapping y talking head vienen de la investigación. Greenscreen y animado, de reels de Gabriel Álvarez y el instructor."
+  },
+  {
+   "titulo": "Ojo con la fuente",
+   "quien": "tu",
+   "texto": "1 y 3: blogs de herramientas de edición. 2 y 4: los analicé en los reels que pasaste. 5: propuesta mía, sin datos propios."
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Yapping",
+   "descripcion": "Hablas al celular de una sola idea. Lo que cuenta es el gancho, la idea y el cierre, no la producción.",
+   "agentes": [
+    {
+     "nombre": "Gancho y una idea",
+     "quien": "tu",
+     "texto": "Hablas desde el segundo 0 y pones en pantalla una frase completa. Si tienes dos ideas, haz dos videos."
+    },
+    {
+     "nombre": "Prueba y cierre",
+     "quien": "tu",
+     "texto": "Muestras algo verificable (un número, un antes y después) y cierras con un solo llamado, como comentar una palabra."
+    },
+    {
+     "nombre": "Claude edita",
+     "quien": "cl",
+     "texto": "Quita silencios, quema los subtítulos, pone el gancho en pantalla y deja el video entre 30 y 60 segundos."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Greenscreen estilo Gabo",
+   "descripcion": "Tú cuentas una parábola y la pantalla cambia entre tu cara y escenas ilustradas en blanco y negro. Subtítulos grandes, palabra por palabra.",
+   "agentes": [
+    {
+     "nombre": "Eliges la parábola",
+     "quien": "tu",
+     "texto": "Una historia corta con moraleja (en el reel, un ratón y una rana atados). La cuentas en menos de 30 segundos."
+    },
+    {
+     "nombre": "Escenas ilustradas",
+     "quien": "cl",
+     "texto": "Coloca ilustraciones en blanco y negro hechas con una herramienta de imágenes y las cambia cada pocos segundos."
+    },
+    {
+     "nombre": "Moraleja a cámara",
+     "quien": "tu",
+     "texto": "Vuelves a cámara para unir la historia con la vida real y cierras pidiendo que te sigan."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Talking head fijo",
+   "descripcion": "Una sola toma sin cortes ni b-roll. Todo depende de lo que dices y de cómo lo dices.",
+   "agentes": [
+    {
+     "nombre": "Una toma, sin cortes",
+     "quien": "tu",
+     "texto": "Grabas de corrido con el celular fijo y sin b-roll: la confianza en ti hace el trabajo."
+    },
+    {
+     "nombre": "Gancho y subtítulos",
+     "quien": "cl",
+     "texto": "Pone el gancho escrito al inicio y los subtítulos palabra por palabra, sin cortes ni movimientos de cámara."
+    },
+    {
+     "nombre": "Tu cara es la marca",
+     "quien": "tu",
+     "texto": "Es el formato que más depende de ti: funciona mejor si ya tienes algo que decir con autoridad."
+    }
+   ]
+  },
+  {
+   "nombre": "4 · Animado estilo David",
+   "descripcion": "Solo tu voz y gráficos en movimiento, sin tu cara: cubos, números grandes y subtítulos con la palabra clave resaltada.",
+   "agentes": [
+    {
+     "nombre": "Guion de una idea",
+     "quien": "tu",
+     "texto": "Un dato que todos conocen, un giro inesperado y una pregunta al final. Grabas solo la voz."
+    },
+    {
+     "nombre": "Claude anima",
+     "quien": "cl",
+     "texto": "Dibuja con código cubos, números y gráficas que se transforman con tu voz, sobre fondo oscuro y un solo color de acento."
+    },
+    {
+     "nombre": "Subtítulos y cierre",
+     "quien": "cl",
+     "texto": "Subtítulos pequeños abajo con la palabra clave en color y un cierre que pide guardar el video."
+    }
+   ]
+  },
+  {
+   "nombre": "5 · Antes y después con IA",
+   "descripcion": "Muestras un cambio: el antes estable, una transición rápida y el después visible 1 a 2 segundos.",
+   "agentes": [
+    {
+     "nombre": "Elige el contraste",
+     "quien": "tu",
+     "texto": "Cuanto más grande o sorprendente el cambio, mejor. Ejemplo: tu video sin editar contra el editado con tu plantilla."
+    },
+    {
+     "nombre": "Arma la comparación",
+     "quien": "cl",
+     "texto": "Deja el antes estable, hace la transición (corte, cortinilla o zoom) y mantiene el después con texto corto."
+    },
+    {
+     "nombre": "Versión con IA",
+     "quien": "tu",
+     "texto": "El después puede venir de una herramienta de IA de pago. No hay datos de cómo rinde frente a material real: pruébalo."
+    }
+   ]
+  }
+ ],
+ "cierre": "Elige uno, úsalo 2 semanas seguidas y mide antes de pasar al siguiente formato."
+}

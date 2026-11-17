@@ -1,0 +1,142 @@
+{
+ "origen_x": 90000,
+ "titulo1": "Cómo sacar +100 ideas",
+ "titulo2": "para grabar con Grok Bot",
+ "barra": "5 niveles     |     1 guion por ángulo     |     Nada sale sin tu aprobación",
+ "dueno": {
+  "barra": "Dueño: Saúl",
+  "texto": "Das la orden o una idea, apruebas todo y grabas los guiones aprobados. Nada se publica sin ti."
+ },
+ "jefe": {
+  "barra": "Bot de Ángulos · Coordinador",
+  "quien": "cl",
+  "texto": "Analiza al cliente ideal, propone 6 a 8 ángulos, reúne los votos y coordina la votación de cada guion."
+ },
+ "laterales": [
+  {
+   "titulo": "Cliente ideal",
+   "quien": "tu",
+   "texto": "Dueño de negocio de LATAM, de 28 a 45 años, que no publica contenido. Para él se escribe todo."
+  },
+  {
+   "titulo": "Regla de votos",
+   "quien": "cl",
+   "texto": "3 o más BIEN: aprobado. 3 o más MAL: regresa a Imhotep con las razones y se vuelve a votar."
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Estrategia",
+   "descripcion": "Convierte tu orden en ángulos de comunicación para debatir.",
+   "agentes": [
+    {
+     "nombre": "Recibe tu orden",
+     "quien": "cl",
+     "texto": "Toma tu tema o tu “dame guiones” y analiza al cliente ideal antes de proponer nada."
+    },
+    {
+     "nombre": "Propone 6 a 8 ángulos",
+     "quien": "cl",
+     "texto": "Dolor, deseo, enemigo común, mito vs. realidad, historia, prueba, antes y después, urgencia."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Comité de debate",
+   "descripcion": "5 bots, cada uno con el estilo de un referente, votan los mejores ángulos.",
+   "agentes": [
+    {
+     "nombre": "Estilo Hormozi",
+     "quien": "cl",
+     "texto": "Oferta y ecuación de valor."
+    },
+    {
+     "nombre": "Estilo Iman Gadzhi",
+     "quien": "cl",
+     "texto": "Posicionamiento premium y estética."
+    },
+    {
+     "nombre": "Estilo Ramiro Cubría",
+     "quien": "cl",
+     "texto": "Contracorriente y contenido que vende."
+    },
+    {
+     "nombre": "Estilo Víctor Heras",
+     "quien": "cl",
+     "texto": "Claridad: que lo entienda cualquiera."
+    },
+    {
+     "nombre": "Estilo Gary Vee",
+     "quien": "cl",
+     "texto": "Documentar, volumen y atención."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Producción",
+   "descripcion": "Imhotep escribe un guion por cada ángulo ganador.",
+   "agentes": [
+    {
+     "nombre": "Imhotep, guionista",
+     "quien": "cl",
+     "texto": "Escribe un guion por ángulo: gancho, promesa, cuerpo y CTA."
+    },
+    {
+     "nombre": "Solo datos reales",
+     "quien": "cl",
+     "texto": "Usa únicamente tus cifras y casos, con marcadores [CIFRA REAL] y [CASO REAL] para que los llenes."
+    },
+    {
+     "nombre": "Al coordinador",
+     "quien": "cl",
+     "texto": "Manda los guiones al Bot de Ángulos, no a ti."
+    }
+   ]
+  },
+  {
+   "nombre": "4 · Control de calidad",
+   "descripcion": "El mismo comité de 5 vota cada guion.",
+   "agentes": [
+    {
+     "nombre": "Vota BIEN o MAL",
+     "quien": "cl",
+     "texto": "Cada bot vota; si es MAL, da una razón corta."
+    },
+    {
+     "nombre": "3 o más BIEN",
+     "quien": "cl",
+     "texto": "Guion APROBADO. Pasa a la entrega."
+    },
+    {
+     "nombre": "3 o más MAL",
+     "quien": "cl",
+     "texto": "Regresa a Imhotep con las razones, lo rehace y vuelve a votación hasta aprobarse."
+    }
+   ]
+  },
+  {
+   "nombre": "5 · Entrega",
+   "descripcion": "Solo llegan a ti los guiones aprobados.",
+   "agentes": [
+    {
+     "nombre": "Imhotep te entrega",
+     "quien": "cl",
+     "texto": "Guiones aprobados, con el conteo de votos de cada uno."
+    },
+    {
+     "nombre": "Notas y pendientes",
+     "quien": "cl",
+     "texto": "Notas opcionales y la lista de datos reales que te falta llenar."
+    },
+    {
+     "nombre": "Tú decides",
+     "quien": "tu",
+     "texto": "Revisas, grabas y decides qué se publica."
+    }
+   ]
+  }
+ ],
+ "cierre": "Ciclo: ángulos → debate → guiones → votación → si sale MAL vuelve a Imhotep → tú.",
+ "sin_claude": true,
+ "ia": "GROK"
+}

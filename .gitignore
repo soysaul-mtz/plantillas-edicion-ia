@@ -1,0 +1,28 @@
+# nunca subir llaves ni configuración personal
+.env
+*.key
+config/kit.json
+instagram/vigilante-recursos/recursos.json
+instagram/vigilante-recursos/cuenta.json
+# dependencias (las instala instalar.sh)
+.venv/
+node_modules/
+bin/segmentar
+# material con licencia personal / generado
+estilo-cine/sfx/*.mp3
+estilo-cine/sfx/*.wav
+# proyectos de video (pesados y personales); solo se versiona el demo
+proyectos/*
+!proyectos/demo/
+!proyectos/ejemplo-c8252/
+proyectos/ejemplo-c8252/salida/
+proyectos/demo/salida/
+proyectos/demo/cuadros*/
+proyectos/demo/mascaras/
+**/salida/
+**/__pycache__/
+.DS_Store
+# herramientas que crean los instaladores (Mac: swiftc · Windows/Linux: envoltorios de plataforma/*.py) y modelos que se bajan solos
+bin/
+editor-testimoniales/editor/bin/
+plataforma/modelos/

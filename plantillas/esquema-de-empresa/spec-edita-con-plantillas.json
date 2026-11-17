@@ -1,0 +1,131 @@
+{
+ "origen_x": 21000,
+ "titulo1": "Edita con Plantillas",
+ "titulo2": "Automáticamente con",
+ "barra": "1 referencia     |     1 plantilla con nombre     |     Escaleta antes de editar",
+ "dueno": {
+  "barra": "Dueño: Tú",
+  "texto": "Eliges la referencia, apruebas la escaleta y corriges hasta que el video te guste."
+ },
+ "jefe": {
+  "barra": "Claude · Jefe de edición",
+  "quien": "cl",
+  "texto": "Analiza la referencia, la vuelve plantilla y edita cada video después de enseñarte su escaleta."
+ },
+ "laterales": [
+  {
+   "titulo": "La referencia",
+   "quien": "tu",
+   "texto": "Un reel con animaciones que te gusten. Sin personas generadas con IA y nada demasiado complejo.",
+   "placeholder": "Pega aquí el link del reel"
+  },
+  {
+   "titulo": "El Word de plantillas",
+   "quien": "cl",
+   "texto": "Cada plantilla con su nombre y el video que editó: tu guía visual para elegir el estilo."
+  }
+ ],
+ "areas": [
+  {
+   "nombre": "1 · Referencia",
+   "descripcion": "Escoges un video que se pueda hacer con código: animaciones y transiciones, sin personas generadas con IA.",
+   "agentes": [
+    {
+     "nombre": "Eliges el video",
+     "quien": "tu",
+     "texto": "Buscas un reel con animaciones que te gusten y lo descargas con los fragmentos que quieres imitar."
+    },
+    {
+     "nombre": "¿Se puede con código?",
+     "quien": "cl",
+     "texto": "Lo analiza fotograma por fotograma y te dice qué puede hacer con código y qué necesitaría de ti o de otra herramienta."
+    }
+   ]
+  },
+  {
+   "nombre": "2 · Prueba",
+   "descripcion": "Antes de crear la plantilla haces un video corto de prueba para ajustar el estilo.",
+   "agentes": [
+    {
+     "nombre": "Video de 10 a 15 s",
+     "quien": "tu",
+     "texto": "Recortas un video tuyo a 10 o 15 segundos. Si no tienes, le pides un guion de un renglón para probar."
+    },
+    {
+     "nombre": "Lo edita al estilo",
+     "quien": "cl",
+     "texto": "Edita la prueba con el estilo de la referencia. Todavía no crea la plantilla."
+    },
+    {
+     "nombre": "Correcciones",
+     "quien": "tu",
+     "texto": "Le dices qué no te gustó en la misma conversación. Al inicio gasta más tokens; después ya no."
+    }
+   ]
+  },
+  {
+   "nombre": "3 · Plantilla",
+   "descripcion": "Cuando la prueba te gusta, la conviertes en una plantilla con nombre.",
+   "agentes": [
+    {
+     "nombre": "Genera la plantilla",
+     "quien": "cl",
+     "texto": "Guarda el estilo como plantilla en su sistema, lista para cualquier video."
+    },
+    {
+     "nombre": "Le pones nombre",
+     "quien": "tu",
+     "texto": "Le das un identificador, por ejemplo “Mi estilo Pro”, para pedirla después."
+    },
+    {
+     "nombre": "Word de plantillas",
+     "quien": "cl",
+     "texto": "La agrega a tu Word con el video que editó, para que veas cuál usar."
+    }
+   ]
+  },
+  {
+   "nombre": "4 · Escaleta",
+   "descripcion": "Antes de editar cada video, Claude lo prepara y te enseña el plan.",
+   "agentes": [
+    {
+     "nombre": "Fotograma a fotograma",
+     "quien": "cl",
+     "texto": "Revisa tu video cuadro por cuadro para saber dónde estás tú en cada momento."
+    },
+    {
+     "nombre": "Transcribe y limpia",
+     "quien": "cl",
+     "texto": "Transcribe y quita las partes que no sirven; deja solo lo importante."
+    },
+    {
+     "nombre": "Escaleta",
+     "quien": "cl",
+     "texto": "Segundo a segundo: qué dices, qué se ve y dónde va cada gráfico, subtítulo o animación. Ahí pides máscaras."
+    }
+   ]
+  },
+  {
+   "nombre": "5 · Edición",
+   "descripcion": "Con la escaleta aprobada, Claude edita y tú solo corriges lo que veas.",
+   "agentes": [
+    {
+     "nombre": "Edita el video",
+     "quien": "cl",
+     "texto": "Aplica la plantilla y la escaleta: animaciones, subtítulos, corrección de color y suavizado de piel."
+    },
+    {
+     "nombre": "Corriges al verlo",
+     "quien": "tu",
+     "texto": "Si algo se ve mal, por ejemplo un recorte feo, se lo dices y lo arregla."
+    },
+    {
+     "nombre": "Música y sonido",
+     "quien": "tu",
+     "texto": "Lo único externo: música y efectos de sonido libres de derechos."
+    }
+   ]
+  }
+ ],
+ "cierre": "Corregir la escaleta cuesta menos tokens que rehacer el video: primero el plan, después la edición."
+}

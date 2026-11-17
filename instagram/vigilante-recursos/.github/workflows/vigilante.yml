@@ -1,0 +1,21 @@
+name: Vigilante de recursos
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # cada 30 min (GitHub a veces se retrasa unos minutos)
+  workflow_dispatch:          # botón "Run workflow" para correrlo a mano
+
+concurrency:
+  group: vigilante
+  cancel-in-progress: false
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Revisar comentarios y mandar recursos
+        run: python3 vigilante.py
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
